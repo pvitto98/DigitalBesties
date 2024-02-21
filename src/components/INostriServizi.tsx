@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import Servizio from "./Servizio";
 import styles from "./INostriServizi.module.css";
 
 const INostriServizi: FunctionComponent = () => {
@@ -13,57 +12,48 @@ const INostriServizi: FunctionComponent = () => {
         </b>
       </div>
       <div className={styles.inostriservizicontent}>
-        <Servizio
-          servizioTitle="Social Media Marketing"
-          image="/image@2x.png"
-          servizioText="Gestiamo i tuoi account sui social media per aumentare la tua visibilità online e coinvolgere il tuo pubblico target."
-          servizioBorderRadius="15px"
-          servizioBackgroundColor="#a25cad"
-          servizioBoxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
-          servizioBorder="0.5px solid var(--color-whitesmoke)"
-          servizioHeight="511px"
-          servizioPadding="var(--padding-mini) var(--padding-xl) var(--padding-xl)"
-          headingWidth="298px"
-          servizioTitleFontWeight="bold"
-          servizioTitleColor="#fff"
-          servizioTitleTextShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
-          servizioTextColor="#fff"
-          servizioTextFontWeight="600"
-        />
-        <Servizio
-          servizioTitle="Web Developing"
-          image="/image@2x.png"
-          servizioText="Creiamo siti web che si adattano a tutti i dispositivi e offrono un'esperienza utente fluida e piacevole."
-          servizioBorderRadius="15px"
-          servizioBackgroundColor="#a25cad"
-          servizioBoxShadow="0px 4px 40px rgba(0, 0, 0, 0.25)"
-          servizioBorder="0.5px solid var(--color-whitesmoke)"
-          servizioHeight="511px"
-          servizioPadding="var(--padding-mini) var(--padding-xl) var(--padding-xl)"
-          headingWidth="209px"
-          servizioTitleFontWeight="bold"
-          servizioTitleColor="#fff"
-          servizioTitleTextShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
-          servizioTextColor="#fff"
-          servizioTextFontWeight="600"
-        />
-        <Servizio
-          servizioTitle="Copywriting"
-          image="/image@2x.png"
-          servizioText="Scriviamo testi persuasivi e coinvolgenti per promuovere la tua azienda o prodotto."
-          servizioBorderRadius="15px"
-          servizioBackgroundColor="#a25cad"
-          servizioBoxShadow="0px 4px 40px rgba(0, 0, 0, 0.25)"
-          servizioBorder="0.5px solid var(--color-whitesmoke)"
-          servizioHeight="511px"
-          servizioPadding="var(--padding-mini) var(--padding-xl) var(--padding-xl)"
-          headingWidth="154px"
-          servizioTitleFontWeight="bold"
-          servizioTitleColor="#fff"
-          servizioTitleTextShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
-          servizioTextColor="#fff"
-          servizioTextFontWeight="600"
-        />
+        <div className={styles.servizio}>
+          <div className={styles.serviziocontent}>
+            <div className={styles.heading}>
+              <b className={styles.serviziotitle}>Social Media Marketing</b>
+            </div>
+            <img className={styles.imageIcon} alt="" src="/image@2x.png" />
+          </div>
+          <div className={styles.serviziotextcontainer}>
+            <div className={styles.serviziotext}>
+              Gestiamo i tuoi account sui social media per aumentare la tua
+              visibilità online e coinvolgere il tuo pubblico target.
+            </div>
+          </div>
+        </div>
+        <div className={styles.servizio1}>
+          <div className={styles.serviziocontent}>
+            <div className={styles.heading1}>
+              <b className={styles.serviziotitle}>Web Developing</b>
+            </div>
+            <img className={styles.imageIcon} alt="" src="/image1@2x.png" />
+          </div>
+          <div className={styles.serviziotextcontainer}>
+            <div className={styles.serviziotext}>
+              Creiamo siti web che si adattano a tutti i dispositivi e offrono
+              un'esperienza utente fluida e piacevole.
+            </div>
+          </div>
+        </div>
+        <div className={styles.servizio1}>
+          <div className={styles.serviziocontent}>
+            <div className={styles.heading2}>
+              <b className={styles.serviziotitle}>Copywriting</b>
+            </div>
+            <img className={styles.imageIcon} alt="" src="/image2@2x.png" />
+          </div>
+          <div className={styles.serviziotextcontainer}>
+            <div className={styles.serviziotext}>
+              Scriviamo testi persuasivi e coinvolgenti per promuovere la tua
+              azienda o prodotto.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
