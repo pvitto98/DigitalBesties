@@ -62,7 +62,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  padding: var(--padding-81xl);
+  padding: 15px var(--padding-81xl); /* Change this line */
   text-align: center;
   font-size: var(--font-size-21xl);
   color: var(--color-darkslateblue);
@@ -75,18 +75,25 @@
 }
 @media screen and (max-width: 960px) {
   .text {
-    font-size: var(--font-size-xl);
+    font-size:15px;
     text-align: justify;
+    height: 100%;
+    margin-bottom: 20px;
   }
   .chisiamocontent {
-    width: 320px;
+    width: 100%; /* Change this line */
     align-items: center;
     justify-content: flex-start;
+    display: block; /* Change this line */
+
   }
   .chisiamo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--gap-31xl);
+    gap: 10PX;
+    height: 100%;
+    padding: 15px 50px; /* Change this line */
+
   }
 }

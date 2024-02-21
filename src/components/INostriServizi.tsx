@@ -17,7 +17,7 @@ const INostriServizi: FunctionComponent = () => {
             <div className={styles.heading}>
               <b className={styles.serviziotitle}>Social Media Marketing</b>
             </div>
-            <img className={styles.imageIcon} alt="" src="/image@2x.png" />
+            <img className={styles.imageIcon} alt="" src="/image@2x.jpg" />
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
@@ -31,7 +31,7 @@ const INostriServizi: FunctionComponent = () => {
             <div className={styles.heading1}>
               <b className={styles.serviziotitle}>Web Developing</b>
             </div>
-            <img className={styles.imageIcon} alt="" src="/image1@2x.png" />
+            <img className={styles.imageIcon} alt="" src="/image1@2x.jpg" />
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
@@ -45,7 +45,7 @@ const INostriServizi: FunctionComponent = () => {
             <div className={styles.heading2}>
               <b className={styles.serviziotitle}>Copywriting</b>
             </div>
-            <img className={styles.imageIcon} alt="" src="/image2@2x.png" />
+            <img className={styles.imageIcon} alt="" src="/image2@2x.jpg" />
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>

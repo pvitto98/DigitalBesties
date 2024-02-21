@@ -35,12 +35,22 @@
   font-size: var(--font-size-xl);
   color: var(--color-white);
   font-family: var(--font-syne);
+  
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 426px) {
   .title {
     font-size: var(--font-size-lg);
   }
   .email {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .title {
+    font-size: var(--font-size-lg);
+  }
+  .email {
+    font-size: var(--font-size-mini);
   }
 }

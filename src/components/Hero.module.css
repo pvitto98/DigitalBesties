@@ -29,11 +29,15 @@
 }
 .hero {
   align-items: flex-start;
-  padding: var(--padding-31xl) 0;
+  flex-direction: column;
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  padding: 90px 0;
   text-align: center;
   font-size: var(--font-size-71xl);
   color: var(--color-khaki);
   font-family: var(--font-syne);
+  height: calc(100vh - 90px); /* Subtract the height of the navbar from 100vh */
 }
 @media screen and (max-width: 960px) {
   .title {
@@ -48,7 +52,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 426px) {
   .title {
     font-size: var(--font-size-26xl);
   }

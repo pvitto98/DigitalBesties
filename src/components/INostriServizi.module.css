@@ -123,6 +123,12 @@
   font-size: var(--font-size-4xl);
   color: var(--color-white);
 }
+.inostriservizicontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Replace 300px with the minimum width of your services */
+  row-gap: 20px; /* Replace 20px with the desired row gap */
+  column-gap: 10px; /* Replace 10px with the desired column gap */
+}
 .inostriservizi {
   flex-direction: column;
   justify-content: flex-start;
@@ -148,13 +154,27 @@
     align-items: center;
     justify-content: flex-start;
   }
+  .blackbox {
+    left: 188px;
+  }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 426px) {
   .title {
     padding-left: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
   .inostriservizicontent {
     gap: var(--gap-21xl);
+  }
+  .imageIcon {
+    width: 270px; /* Add this line */
+  }
+  .serviziotext {
+    font-size: 14px; /* Add this line */
+    padding: 15px;
   }
 }
