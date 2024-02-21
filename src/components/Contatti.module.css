@@ -1,0 +1,46 @@
+.email,
+.title {
+  position: relative;
+}
+.email {
+  font-size: var(--font-size-16xl);
+  color: var(--color-khaki);
+}
+.contattitext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 668px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px 0;
+}
+.contatticontent {
+  width: 668px;
+  position: relative;
+  height: 78px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.contatti {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-81xl) 0;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-syne);
+}
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: var(--font-size-lg);
+  }
+  .email {
+    font-size: var(--font-size-xl);
+  }
+}

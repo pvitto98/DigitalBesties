@@ -1,0 +1,31 @@
+.scrivici {
+  position: relative;
+  font-size: var(--font-size-3xl-1);
+  font-family: var(--font-nunito);
+  color: var(--color-khaki);
+  text-align: center;
+}
+.patternIcon {
+  width: 48.6px;
+  position: relative;
+  height: 48.6px;
+}
+.button,
+.button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button1 {
+  flex-direction: row;
+  gap: 0 14.19px;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 15.770086288452148px 18.924102783203125px;
+  background-color: var(--color-darkslateblue);
+  border-radius: 63.08px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+}

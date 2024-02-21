@@ -1,0 +1,29 @@
+.logo {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36.9px;
+  text-shadow: 1.2px 0 0#ffe194, 0 1.2px 0#ffe194, -1.2px 0 0#ffe194,
+    0-1.2px 0#ffe194;
+}
+.navbar {
+  align-self: stretch;
+  border-radius: 0 0 var(--br-81xl) var(--br-81xl);
+  background-color: var(--color-darkslateblue);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6xl) var(--padding-3xs);
+  z-index: 2;
+  text-align: center;
+  font-size: var(--font-size-24xl-9);
+  color: var(--color-mediumvioletred);
+  font-family: var(--font-lily-script-one);
+}
+@media screen and (max-width: 420px) {
+  .logo {
+    font-size: var(--font-size-11xl);
+  }
+}

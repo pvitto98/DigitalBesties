@@ -1,0 +1,92 @@
+.blackbox {
+  width: 153px;
+  position: absolute;
+  margin: 0 !important;
+  top: -0.1px;
+  left: 91px;
+  border-radius: 0 var(--br-31xl) var(--br-31xl) 0;
+  background-color: var(--color-darkslateblue);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: 53px;
+  z-index: 0;
+}
+.chi {
+  white-space: pre-wrap;
+}
+.siamo {
+  color: var(--color-white);
+}
+.chiSiamo {
+  width: 229px;
+  position: relative;
+  display: inline-block;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+}
+.title {
+  width: 254px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 var(--padding-6xl) 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.siamoUnTeam {
+  margin: 0;
+}
+.text {
+  align-self: stretch;
+  height: 480px;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.chisiamocontent {
+  width: 561px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px 0;
+  text-align: justify;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-nunito);
+}
+.chisiamo {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-81xl);
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslateblue);
+  font-family: var(--font-syne);
+}
+@media screen and (max-width: 1200px) {
+  .text {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 960px) {
+  .text {
+    font-size: var(--font-size-xl);
+    text-align: justify;
+  }
+  .chisiamocontent {
+    width: 320px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .chisiamo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-31xl);
+  }
+}
