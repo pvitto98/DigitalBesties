@@ -16,79 +16,71 @@
     transform: rotate(90deg);
   }
 }
-.chiSiamo1,
-.iNostriDifferenti,
-.siamoUnTeam {
+.ilNostroCredo,
+.raccontiamoStorieAccendiamo {
   align-self: stretch;
-  height: 65px;
+  height: 24px;
   position: relative;
   display: inline-block;
   opacity: 0;
 }
-.chiSiamo1.animate {
+.ilNostroCredo.animate {
   animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
 }
-.iNostriDifferenti,
-.siamoUnTeam {
-  height: 216px;
+.raccontiamoStorieAccendiamo {
+  height: 335px;
+  font-size: var(--font-size-31xl);
+  font-family: var(--font-abril-fatface);
+  color: var(--color-black);
+  opacity: 1;
 }
-.siamoUnTeam.animate {
-  animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
+.raccontiamoStorieAccendiamo.animate {
+  animation: 1s ease 0.5s 1 normal both tilt-in-top-1;
 }
-.iNostriDifferenti.animate {
-  animation: 1s ease 1s 1 normal forwards tilt-in-top-1;
-}
-.chisiamotext,
 .title {
   align-self: stretch;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.chisiamotext {
+  padding: var(--padding-31xl) 0;
+  box-sizing: border-box;
   gap: 20px 0;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
-  font-family: var(--font-martian-mono);
-}
-.title {
-  width: 550px;
-  gap: 36px 0;
   z-index: 0;
 }
-.chisiamoimageIcon {
-  height: 350px;
-  width: 350px;
+.mottoimageIcon {
+  height: 400px;
+  width: 400px;
   position: absolute;
   margin: 0 !important;
-  top: 238px;
-  left: 758px;
+  top: 40px;
+  left: 739px;
   overflow: hidden;
   flex-shrink: 0;
   opacity: 1;
   z-index: 1;
 }
-.chisiamoimageIcon.animate {
-  animation: 15s ease 0s infinite reverse forwards rotate-90-cw;
+.mottoimageIcon.animate {
+  animation: 20s linear 0s infinite normal forwards rotate-90-cw;
 }
-.chiSiamo {
+.motto {
   align-self: stretch;
-  background-color: var(--color-dimgray-200);
+  background-color: var(--color-palevioletred);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-81xl);
+  padding: 0 var(--padding-81xl);
   position: relative;
   gap: 0 441px;
   text-align: left;
-  font-size: var(--font-size-29xl);
-  color: var(--color-khaki);
-  font-family: var(--font-abril-fatface);
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-martian-mono);
 }
 @media screen and (max-width: 960px) {
-  .chiSiamo {
+  .motto {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -96,11 +88,14 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .raccontiamoStorieAccendiamo {
+    font-size: var(--font-size-13xl);
+  }
   .title {
     align-self: stretch;
     width: auto;
   }
-  .chiSiamo {
+  .motto {
     padding-left: var(--padding-11xl);
     padding-right: var(--padding-11xl);
     box-sizing: border-box;

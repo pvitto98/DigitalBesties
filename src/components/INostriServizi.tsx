@@ -1,23 +1,53 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect } from "react";
 import styles from "./INostriServizi.module.css";
 
 const INostriServizi: FunctionComponent = () => {
+  useEffect(() => {
+    const scrollAnimElements = document.querySelectorAll(
+      "[data-animate-on-scroll]"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add(styles.animate);
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+
+    return () => {
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.unobserve(scrollAnimElements[i]);
+      }
+    };
+  }, []);
   return (
-    <div className={styles.inostriservizi}>
+    <div
+      className={styles.inostriservizi}
+      data-scroll-to="iNostriServiziContainer"
+    >
       <div className={styles.title}>
-        <div className={styles.blackbox} />
-        <b className={styles.iNostriServiziContainer}>
-          <span className={styles.iNostri}>{`I nostri  `}</span>
-          <span className={styles.servizi}>{`servizi `}</span>
-        </b>
+        <div className={styles.iNostriServizi} data-animate-on-scroll>
+          I nostri servizi
+        </div>
       </div>
       <div className={styles.inostriservizicontent}>
-        <div className={styles.servizio}>
+        <div className={styles.servizio} data-animate-on-scroll>
           <div className={styles.serviziocontent}>
             <div className={styles.heading}>
-              <b className={styles.serviziotitle}>Social Media Marketing</b>
+              <div className={styles.serviziotitle}>Social Media Marketing</div>
             </div>
-            <img className={styles.imageIcon} alt="" src="/image@2x.jpg" />
+            <img className={styles.imageIcon} alt="" src="/image@2x.png" />
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
@@ -26,12 +56,12 @@ const INostriServizi: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className={styles.servizio1}>
+        <div className={styles.servizio1} data-animate-on-scroll>
           <div className={styles.serviziocontent}>
             <div className={styles.heading1}>
-              <b className={styles.serviziotitle}>Web Developing</b>
+              <div className={styles.serviziotitle}>Web Developing</div>
             </div>
-            <img className={styles.imageIcon} alt="" src="/image1@2x.jpg" />
+            <img className={styles.imageIcon} alt="" src="/image@2x.png" />
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
@@ -40,12 +70,12 @@ const INostriServizi: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className={styles.servizio1}>
+        <div className={styles.servizio2} data-animate-on-scroll>
           <div className={styles.serviziocontent}>
             <div className={styles.heading2}>
-              <b className={styles.serviziotitle}>Copywriting</b>
+              <div className={styles.serviziotitle}>Copywriting</div>
             </div>
-            <img className={styles.imageIcon} alt="" src="/image2@2x.jpg" />
+            <img className={styles.imageIcon} alt="" src="/image@2x.png" />
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
