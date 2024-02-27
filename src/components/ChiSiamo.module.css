@@ -58,12 +58,12 @@
   z-index: 0;
 }
 .chisiamoimageIcon {
-  height: 350px;
-  width: 350px;
+  height: 400px;
+  width: 400px;
   position: absolute;
   margin: 0 !important;
-  top: 238px;
-  right: 200px;
+  right: 15%; /* Add this */
+  transform: translate(-50%, -50%); /* Add this */
   overflow: hidden;
   flex-shrink: 0;
   opacity: 1;
@@ -76,9 +76,9 @@
   align-self: stretch;
   background-color: var(--color-dimgray-200);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: var(--padding-81xl);
   position: relative;
   gap: 0 441px;

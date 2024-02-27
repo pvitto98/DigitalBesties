@@ -8,6 +8,8 @@
   line-height: 0%;
   font-family: var(--font-abril-fatface);
   display: inline-block;
+  color: inherit; /* Add this to change the color */
+  text-decoration: none; /* Add this to remove the underline */
 }
 .contattitext {
   align-self: stretch;
