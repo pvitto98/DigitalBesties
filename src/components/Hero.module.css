@@ -5,16 +5,54 @@
 .title {
   align-self: stretch;
   position: relative;
-  font-weight: 600;
 }
 .title {
-  text-shadow: 2.5px 0 0#3a1d60, 0 2.5px 0#3a1d60, -2.5px 0 0#3a1d60,
-    0-2.5px 0#3a1d60;
+  line-height: 100px;
+  text-transform: uppercase;
 }
 .subtitle {
-  font-size: var(--font-size-6xl);
-  font-family: var(--font-nunito);
-  color: var(--color-white);
+  font-size: var(--font-size-11xl);
+  color: var(--color-palevioletred);
+}
+.herotext {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px 0;
+}
+.contattaci {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-martian-mono);
+  color: var(--color-khaki);
+  text-align: center;
+}
+.button {
+  flex-direction: row;
+  align-items: center;
+}
+.button,
+.contattacibutton,
+.herobuttons {
+  display: flex;
+  justify-content: center;
+}
+.contattacibutton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) 18.924102783203125px;
+  background-color: var(--color-black);
+  border-radius: 63.08px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  align-items: center;
+}
+.herobuttons {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0 20px;
 }
 .hero,
 .herocontent {
@@ -25,24 +63,24 @@
 }
 .herocontent {
   align-items: center;
+  padding: var(--padding-81xl) 0;
   gap: 30px 0;
 }
 .hero {
+  background-color: var(--color-white);
   align-items: flex-start;
+  padding: var(--padding-31xl) 0;
   flex-direction: column;
   justify-content: center; /* Add this line */
   align-items: center; /* Add this line */
-  padding: 90px 0;
   text-align: center;
-  font-size: var(--font-size-71xl);
-  color: var(--color-khaki);
-  font-family: var(--font-syne);
+  font-size: var(--font-size-81xl);
+  color: var(--color-darkslateblue-200);
+  font-family: var(--font-abril-fatface);
   height: calc(100vh - 90px); /* Subtract the height of the navbar from 100vh */
+
 }
 @media screen and (max-width: 960px) {
-  .title {
-    font-size: var(--font-size-36xl);
-  }
   .subtitle {
     font-size: var(--font-size-xl);
   }
@@ -55,9 +93,21 @@
 @media screen and (max-width: 426px) {
   .title {
     font-size: var(--font-size-26xl);
+    line-height: 50px;
   }
   .subtitle {
     font-size: var(--font-size-mini);
+  }
+  .contattaci {
+    font-size: var(--font-size-xs);
+  }
+  .contattacibutton {
+    align-self: stretch;
+    width: auto;
+  }
+  .herobuttons {
+    flex-direction: column;
+    gap: var(--gap-3xs);
   }
   .herocontent {
     padding-left: var(--padding-mini);

@@ -10,10 +10,9 @@ const ContactFormContainer: FunctionComponent<ContactFormContainerType> = ({
   onButtonClick,
 }) => {
   return (
-    <button className={styles.button} onClick={onButtonClick}>
-      <div className={styles.button1}>
-        <b className={styles.scrivici}>Scrivici!</b>
-        <img className={styles.patternIcon} alt="" src="/pattern.svg" />
+    <button className={styles.servizibutton} onClick={onButtonClick}>
+      <div className={styles.button}>
+        <div className={styles.iNostriServizi}>I nostri Servizi</div>
       </div>
     </button>
   );

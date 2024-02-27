@@ -1,37 +1,32 @@
-.scrivici {
+.iNostriServizi {
   position: relative;
-  font-size: var(--font-size-3xl-1);
-  font-family: var(--font-nunito);
-  color: var(--color-khaki);
+  font-size: var(--font-size-mini);
+  font-family: var(--font-martian-mono);
+  color: var(--color-black);
   text-align: center;
 }
-.patternIcon {
-  width: 48.6px;
-  position: relative;
-  height: 48.6px;
-}
 .button,
-.button1 {
+.servizibutton {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.button1 {
-  flex-direction: row;
-  gap: 0 14.19px;
-}
-.button {
+.servizibutton {
   cursor: pointer;
   border: 0;
-  padding: 15.770086288452148px 18.924102783203125px;
-  background-color: var(--color-darkslateblue);
+  padding: var(--padding-mini) 18.924102783203125px;
+  background-color: var(--color-lightsalmon);
   border-radius: 63.08px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   flex-direction: column;
 }
-
-@media screen and (max-width: 960px) {
-  .button {
-    margin: auto; /* Add this line */
+@media screen and (max-width: 420px) {
+  .iNostriServizi {
+    font-size: var(--font-size-xs);
+  }
+  .servizibutton {
+    align-self: stretch;
+    width: auto;
   }
 }

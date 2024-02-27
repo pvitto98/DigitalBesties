@@ -6,7 +6,7 @@ const Contatti: FunctionComponent = () => {
     <div className={styles.contatti} data-scroll-to="contattiContainer">
       <div className={styles.contatticontent}>
         <div className={styles.contattitext}>
-          <b className={styles.title}>{`Interessat*? Scrivici al `}</b>
+          <b className={styles.title}>Interessat*? Scrivici!</b>
           <a href="mailto:digitalbestiesagency@gmail.com" className={styles.email}>
             <b>{`digitalbestiesagency@gmail.com`}</b>
           </a>
