@@ -1,6 +1,8 @@
 import { FunctionComponent, useEffect } from "react";
 import styles from "./INostriServizi.module.css";
 import Servizio from "./Servizio";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 
 const INostriServizi: FunctionComponent = () => {
   useEffect(() => {
@@ -38,11 +40,11 @@ const INostriServizi: FunctionComponent = () => {
       data-scroll-to="iNostriServiziContainer"
     >
       <div className={styles.title}>
-        <div className={styles.iNostriServizi} >
+        <div className={styles.iNostriServizi} data-aos="fade-up">
           I nostri servizi
         </div>
       </div>
-      <div className={styles.inostriservizicontent}>
+      <div className={styles.inostriservizicontent} data-aos="fade-up" data-aos-delay="200">
       <Servizio
           title="Social Media Marketing"
           imageSrc="/image@2x.jpg"

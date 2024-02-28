@@ -1,6 +1,10 @@
 import { FunctionComponent, useCallback } from "react";
 import ContactFormContainer from "./ContactFormContainer";
 import styles from "./Hero.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
+
+AOS.init();
 
 const Hero: FunctionComponent = () => {
   const onServiziButtonClick = useCallback(() => {
@@ -25,15 +29,15 @@ const Hero: FunctionComponent = () => {
     <div className={styles.hero}>
       <div className={styles.herocontent}>
         <div className={styles.herotext}>
-          <div className={styles.title}>
+          <div className={styles.title} data-aos="fade-up" >
             <p className={styles.sulWebNon}>{`Sul web non ti `}</p>
             <p className={styles.sulWebNon}>si fila nessuno?</p>
           </div>
-          <div className={styles.subtitle}>
+          <div className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
             Forse perché non ci conosci ancora...
           </div>
         </div>
-        <div className={styles.herobuttons}>
+        <div className={styles.herobuttons} data-aos="fade-up" data-aos-delay="400">
           <ContactFormContainer onButtonClick={onServiziButtonClick} />
           <button
             className={styles.contattacibutton}

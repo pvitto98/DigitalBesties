@@ -1,5 +1,7 @@
 import { FunctionComponent, useEffect } from "react";
 import styles from "./ChiSiamo.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 
 const ChiSiamo: FunctionComponent = () => {
   useEffect(() => {
@@ -34,10 +36,10 @@ const ChiSiamo: FunctionComponent = () => {
   return (
     <div className={styles.chiSiamo}>
       <div className={styles.title}>
-        <div className={styles.chiSiamo1} >
+        <div className={styles.chiSiamo1} data-aos="fade-up">
           Chi Siamo
         </div>
-        <div className={styles.chisiamotext}>
+        <div className={styles.chisiamotext} data-aos="fade-up">
           <div className={styles.siamoUnTeam} >
           Siamo un team di freelancers e una web agency in costruzione, ma ancor prima siamo persone che continuano a scegliersi sin dai banchi di liceo e che hanno deciso di tradurre le proprie competenze in uno spazio eclettico e creativo: Digital Besties. 
           </div>
