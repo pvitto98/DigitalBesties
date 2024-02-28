@@ -26,6 +26,9 @@
 .contatti {
   align-self: stretch;
   background-color: var(--color-palevioletred);
+  background-image: url('../../public/contattacibackground.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: var(--padding-181xl) 0;
   text-align: center;
   font-size: var(--font-size-xl);

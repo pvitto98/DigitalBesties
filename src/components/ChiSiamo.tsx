@@ -61,6 +61,12 @@ Unendo competenze multidisciplinari e passione per il digitale, arricchiamo prog
         src="/chisiamoimage.svg"
         data-animate-on-scroll
       />
+            <img
+        className={styles.chisiamoimageIcon2}
+        alt=""
+        src="/chisiamoimage.svg"
+        data-animate-on-scroll
+      />
     </div>
   );
 };

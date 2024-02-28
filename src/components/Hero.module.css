@@ -70,9 +70,10 @@
   padding: var(--padding-81xl) 0;
   gap: 30px 0;
   z-index: 3;
+  margin-bottom: 150px;
 }
 .hero {
-  background-image: url('../../public/low-poly-grid-haikei.svg');
+  background-image: url('../../public/wave-haikei\ \(10\).svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--color-white);
@@ -85,7 +86,7 @@
   font-size: var(--font-size-81xl);
   color: var(--color-darkslateblue-200);
   font-family: var(--font-abril-fatface);
-  height: calc(100vh - 90px); /* Subtract the height of the navbar from 100vh */
+  height: 100vh; /* Subtract the height of the navbar from 100vh */
 }
 
 /* .bg {

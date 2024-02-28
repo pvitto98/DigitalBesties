@@ -85,6 +85,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--gap-31xl);
+    height: 100%;
   }
 }
 @media screen and (max-width: 420px) {
@@ -99,5 +100,12 @@
     padding-left: var(--padding-11xl);
     padding-right: var(--padding-11xl);
     box-sizing: border-box;
+    
+  }
+  .mottoimageIcon{
+    height: 200px;
+    top:80%;
+    right: 0%;
+  
   }
 }

@@ -56,6 +56,8 @@
   width: 600px;
   gap: 36px 0;
   z-index: 0;
+  margin-top: 150px
+
 }
 .chisiamoimageIcon {
   height: 400px;
@@ -71,6 +73,22 @@
 }
 .chisiamoimageIcon.animate {
   animation: 15s ease 0s infinite reverse forwards rotate-90-cw;
+}
+.chisiamoimageIcon2 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  margin: 0 !important;
+  transform: translate(-50%, -50%); /* Add this */
+  top: calc(80%); /* Add this, adjust as needed */
+  right: calc(20%); /* Adjust this, adjust as needed */
+  overflow: hidden;
+  flex-shrink: 0;
+  opacity: 1;
+  z-index: 1;
+}
+.chisiamoimageIcon2.animate {
+  animation: 15s ease 0s infinite forwards rotate-90-cw;
 }
 .chiSiamo {
   background-image: url('../../public/wave-haikei\ \(4\).svg');
@@ -89,7 +107,7 @@
   font-size: var(--font-size-29xl);
   color: var(--color-khaki);
   font-family: var(--font-abril-fatface);
-  height: 130vh;
+  height: 100vh;
 }
 @media screen and (max-width: 960px) {
   .chiSiamo {
@@ -97,6 +115,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--gap-31xl);
+    height: 100%;
   }
 }
 @media screen and (max-width: 420px) {
@@ -108,5 +127,12 @@
     padding-left: var(--padding-11xl);
     padding-right: var(--padding-11xl);
     box-sizing: border-box;
+  }
+  .chisiamoimageIcon.animate{
+    animation: none;
+  }
+  .chisiamoimageIcon2{
+    top:calc(98%);
+    right: calc(25%);
   }
 }
