@@ -8,7 +8,7 @@ const Contatti: FunctionComponent = () => {
     <div className={styles.contatti} data-scroll-to="contattiContainer">
       <div className={styles.contatticontent}>
         <div className={styles.contattitext}>
-          <b className={styles.title} data-aos="fade-up" >Interessat*? Scrivici!</b>
+          <b className={styles.title} data-aos="fade-up" >Ti interessiamo? Scrivici!</b>
           <a href="mailto:digitalbestiesagency@gmail.com" className={styles.email} data-aos="fade-up" data-aos-delay="200">
             <b>{`digitalbestiesagency@gmail.com`}</b>
           </a>
