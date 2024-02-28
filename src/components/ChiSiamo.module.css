@@ -118,7 +118,7 @@
     height: 100%;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 426px) {
   .title {
     align-self: stretch;
     width: auto;
@@ -132,7 +132,10 @@
     animation: none;
   }
   .chisiamoimageIcon2{
-    top:calc(98%);
+    top:calc(95%);
     right: calc(25%);
+  }
+  .chisiamotext {
+    font-size: var(--font-size-lg);
   }
 }
