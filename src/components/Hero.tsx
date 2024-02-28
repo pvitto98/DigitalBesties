@@ -23,6 +23,10 @@ const Hero: FunctionComponent = () => {
 
   return (
     <div className={styles.hero}>
+  <div className={styles.bg}></div>
+  <div className={`${styles.bg} ${styles.bg2}`}></div>
+  <div className={`${styles.bg} ${styles.bg3}`}></div>
+
       <div className={styles.herocontent}>
         <div className={styles.herotext}>
           <div className={styles.title}>

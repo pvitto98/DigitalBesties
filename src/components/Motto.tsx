@@ -41,8 +41,7 @@ const Motto: FunctionComponent = () => {
           className={styles.raccontiamoStorieAccendiamo}
           data-animate-on-scroll
         >
-          Raccontiamo storie, accendiamo passioni e creiamo connessioni per te e
-          per i tuoi progetti digitali
+        Raccontiamo storie, accendiamo passioni e creiamo connessioni per te e per i tuoi progetti digitali
         </div>
       </div>
       <img

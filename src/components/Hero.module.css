@@ -56,6 +56,10 @@
 }
 .hero,
 .herocontent {
+  /* background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25); */
+  box-sizing:border-box;
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -65,8 +69,12 @@
   align-items: center;
   padding: var(--padding-81xl) 0;
   gap: 30px 0;
+  z-index: 3;
 }
 .hero {
+  background-image: url('../../public/low-poly-grid-haikei.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--color-white);
   align-items: flex-start;
   padding: var(--padding-31xl) 0;
@@ -78,8 +86,59 @@
   color: var(--color-darkslateblue-200);
   font-family: var(--font-abril-fatface);
   height: calc(100vh - 90px); /* Subtract the height of the navbar from 100vh */
-
 }
+
+/* .bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, var(--color-palevioletred) 50%, var(--color-khaki) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 110vh;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+} */
+
+.content {
+  /* background-color: rgba(255,255,255,.8);
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(0,0,0,.25); */
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+
 @media screen and (max-width: 960px) {
   .subtitle {
     font-size: var(--font-size-xl);

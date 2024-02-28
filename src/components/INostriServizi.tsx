@@ -51,8 +51,7 @@ const INostriServizi: FunctionComponent = () => {
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
-              Gestiamo i tuoi account sui social media per aumentare la tua
-              visibilità online e coinvolgere il tuo pubblico target.
+            Studiamo e curiamo le tue piattaforme social per dare ai tuoi progetti la visibilità e il valore che meritano
             </div>
           </div>
         </div>
@@ -65,8 +64,7 @@ const INostriServizi: FunctionComponent = () => {
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
-              Creiamo siti web che si adattano a tutti i dispositivi e offrono
-              un'esperienza utente fluida e piacevole.
+            Sviluppiamo siti web in grado di incorniciare la tua idea in una User Experience avvincente e confortevole per qualsiasi dispositivo
             </div>
           </div>
         </div>
@@ -79,8 +77,7 @@ const INostriServizi: FunctionComponent = () => {
           </div>
           <div className={styles.serviziotextcontainer}>
             <div className={styles.serviziotext}>
-              Scriviamo testi persuasivi e coinvolgenti per promuovere la tua
-              azienda o prodotto.
+            Tessiamo le trame della tua presenza online promuovendo la tua attività con storytelling coinvolgenti e ottimizzati in chiave SEO 
             </div>
           </div>
         </div>

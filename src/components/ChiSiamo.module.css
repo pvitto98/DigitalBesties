@@ -30,7 +30,7 @@
 }
 .iNostriDifferenti,
 .siamoUnTeam {
-  height: 216px;
+  height: auto;
 }
 .siamoUnTeam.animate {
   animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
@@ -73,6 +73,9 @@
   animation: 15s ease 0s infinite reverse forwards rotate-90-cw;
 }
 .chiSiamo {
+  background-image: url('../../public/wave-haikei\ \(4\).svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   align-self: stretch;
   background-color: var(--color-dimgray-200);
   display: flex;
@@ -86,7 +89,7 @@
   font-size: var(--font-size-29xl);
   color: var(--color-khaki);
   font-family: var(--font-abril-fatface);
-  height: 100vh;
+  height: 130vh;
 }
 @media screen and (max-width: 960px) {
   .chiSiamo {

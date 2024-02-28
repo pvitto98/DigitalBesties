@@ -25,6 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-top: 50px;
 }
 .serviziotitle {
   position: absolute;
@@ -74,7 +75,7 @@
   font-family: var(--font-martian-mono);
 }
 .servizio {
-  height: 550px;
+  height: 580px;
   border-radius: var(--br-mini);
   background-color: var(--color-dimgray-100);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -91,7 +92,7 @@
   height: 40px;
 }
 .servizio1 {
-  height: 550px;
+  height: 580px;
   border-radius: var(--br-mini);
   background-color: var(--color-dimgray-100);
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
@@ -113,7 +114,7 @@
   height: 40px;
 }
 .servizio2 {
-  height: 550px;
+  height: 580px;
   border-radius: var(--br-mini);
   background-color: var(--color-dimgray-100);
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
@@ -148,6 +149,9 @@
   column-gap: 10px; /* Replace 10px with the desired column gap */
 }
 .inostriservizi {
+  background-image: url('../../public/wave-haikei\ \(5\).svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--color-white);
   flex-direction: column;
   justify-content: flex-start;

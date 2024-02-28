@@ -21,7 +21,7 @@
   font-size: var(--font-size-11xl);
   color: var(--color-mediumvioletred);
   font-family: var(--font-lily-script-one);
-  
+  z-index: 3
 }
 @media screen and (max-width: 420px) {
   .logo {

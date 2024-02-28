@@ -46,12 +46,12 @@ const ChiSiamo: FunctionComponent = () => {
             interconnesse: Digital Besties.
           </div>
           <div className={styles.iNostriDifferenti} data-animate-on-scroll>
-            I nostri differenti percorsi di vita e punti di vista sono la
-            risorsa guida verso progetti web e social strategici e lungimiranti,
-            cuciti sulle aziende, professionisti e realtà che intendono
-            rivoluzionare la loro presenza online. Il nostro approccio è fresco,
-            innovativo, critico e inclusivo (voce del verbo GenZ di fine anni
-            90).
+          Il nostro modo di fare comunicazione è frutto di differenti percorsi accademici che arricchiscono il nostro lavoro con un taglio critico e trasversale indispensabile per un pubblico sempre più consapevole. 
+Unendo competenze multidisciplinari e passione per il digitale, arricchiamo progetti web e social in ottica strategica e innovativa secondo le esigenze di aziende, professionisti e realtà che intendono rivoluzionare la loro presenza online ━ il tutto accompagnato dalla freschezza GenZ che ci distingue. 
+
+          </div>
+          <div className={styles.iNostriDifferenti} data-animate-on-scroll>
+          E ora vieni qua e racconta alle tue Digital Besties perché la tua comunicazione online ha avuto l'efficacia dei caroselli su Facebook! 
           </div>
         </div>
       </div>
