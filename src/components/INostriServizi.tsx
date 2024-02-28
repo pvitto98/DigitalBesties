@@ -37,12 +37,12 @@ const INostriServizi: FunctionComponent = () => {
       data-scroll-to="iNostriServiziContainer"
     >
       <div className={styles.title}>
-        <div className={styles.iNostriServizi} data-animate-on-scroll>
+        <div className={styles.iNostriServizi} >
           I nostri servizi
         </div>
       </div>
       <div className={styles.inostriservizicontent}>
-        <div className={styles.servizio} data-animate-on-scroll>
+        <div className={styles.servizio} >
           <div className={styles.serviziocontent}>
             <div className={styles.heading}>
               <div className={styles.serviziotitle}>Social Media Marketing</div>
@@ -55,7 +55,7 @@ const INostriServizi: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className={styles.servizio1} data-animate-on-scroll>
+        <div className={styles.servizio1} >
           <div className={styles.serviziocontent}>
             <div className={styles.heading1}>
               <div className={styles.serviziotitle}>Web Developing</div>
@@ -68,7 +68,7 @@ const INostriServizi: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className={styles.servizio2} data-animate-on-scroll>
+        <div className={styles.servizio2} >
           <div className={styles.serviziocontent}>
             <div className={styles.heading2}>
               <div className={styles.serviziotitle}>Copywriting</div>

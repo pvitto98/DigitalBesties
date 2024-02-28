@@ -13,7 +13,7 @@
   height: 65px;
   position: relative;
   display: inline-block;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .iNostriServizi.animate,
 .servizio.animate {
@@ -83,7 +83,7 @@
   padding: var(--padding-mini) var(--padding-xl) var(--padding-11xl);
   box-sizing: border-box;
   gap: 20px 0;
-  opacity: 0;
+  /* opacity: 0; */
   font-size: var(--font-size-9xl);
 }
 .heading1 {
@@ -103,7 +103,7 @@
   padding: var(--padding-mini) var(--padding-xl) var(--padding-xl);
   box-sizing: border-box;
   gap: 20px 0;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .servizio1.animate {
   animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
@@ -125,7 +125,7 @@
   padding: var(--padding-mini) var(--padding-xl) var(--padding-xl);
   box-sizing: border-box;
   gap: 20px 0;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .servizio2.animate {
   animation: 1s ease 1s 1 normal forwards tilt-in-top-1;

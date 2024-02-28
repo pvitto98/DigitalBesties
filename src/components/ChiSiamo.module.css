@@ -23,7 +23,7 @@
   height: 65px;
   position: relative;
   display: inline-block;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .chiSiamo1.animate {
   animation: 1s ease 0s 1 normal forwards tilt-in-top-1;

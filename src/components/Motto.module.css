@@ -22,7 +22,6 @@
   height: 24px;
   position: relative;
   display: inline-block;
-  opacity: 0;
 }
 .ilNostroCredo.animate {
   animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
