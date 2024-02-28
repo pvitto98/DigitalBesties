@@ -161,7 +161,7 @@
   font-size: var(--font-size-29xl);
   color: var(--color-dimgray-300);
   font-family: var(--font-abril-fatface);
-  height: 110vh;
+  height: 100%;
 }
 @media screen and (max-width: 960px) {
   .title {
@@ -189,5 +189,11 @@
   }
   .inostriservizicontent {
     gap: var(--gap-21xl);
+  }
+  .iNostriServizi{
+    font-size:var(--font-size-21xl);
+  }
+  .inostriservizi {
+    gap: 0px 0;
   }
 }

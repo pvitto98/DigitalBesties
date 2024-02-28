@@ -173,5 +173,9 @@ h1 {
     padding-left: var(--padding-mini);
     padding-right: var(--padding-mini);
     box-sizing: border-box;
+    margin-bottom: 0px;
+  }
+  .hero{
+    height: 85vh;
   }
 }

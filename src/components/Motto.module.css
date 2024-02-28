@@ -59,10 +59,11 @@
   flex-shrink: 0;
   opacity: 1;
   z-index: 1;
-}
-.mottoimageIcon.animate {
   animation: 20s linear 0s infinite normal forwards rotate-90-cw;
 }
+/* .mottoimageIcon.animate {
+  animation: 20s linear 0s infinite normal forwards rotate-90-cw;
+} */
 .motto {
   align-self: stretch;
   background-color: var(--color-palevioletred);
@@ -87,13 +88,14 @@
     height: 100%;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 426px) {
   .raccontiamoStorieAccendiamo {
     font-size: var(--font-size-13xl);
   }
   .title {
     align-self: stretch;
     width: auto;
+    padding: 0px;
   }
   .motto {
     padding-left: var(--padding-11xl);
