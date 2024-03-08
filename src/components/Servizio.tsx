@@ -1,5 +1,7 @@
 import { FunctionComponent } from "react";
 import styles from "./Servizio.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 
 interface ServizioProps {
   title: string;
@@ -9,7 +11,7 @@ interface ServizioProps {
 
 const Servizio: FunctionComponent<ServizioProps> = ({ title, imageSrc, text }) => {
   return (
-    <div className={styles.servizio}>
+    <div className={styles.servizio} data-aos="fade-up" data-aos-delay="200">
       <div className={styles.serviziocontent}>
         <div className={styles.heading}>
           <div className={styles.serviziotitle}>{title}</div>

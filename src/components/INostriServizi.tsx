@@ -44,20 +44,20 @@ const INostriServizi: FunctionComponent = () => {
           I nostri servizi
         </div>
       </div>
-      <div className={styles.inostriservizicontent} data-aos="fade-up" data-aos-delay="200">
+      <div className={styles.inostriservizicontent} >
       <Servizio
           title="Social Media Marketing"
-          imageSrc="/image@2x.jpg"
+          imageSrc="/smartphone.png"
           text="Studiamo e curiamo le tue piattaforme social per dare ai tuoi progetti la visibilità e il valore che meritano"
         />
         <Servizio
           title="Web Developing"
-          imageSrc="/image1@2x.jpg"
+          imageSrc="/desktop.png"
           text="Sviluppiamo siti web in grado di incorniciare la tua idea in una User Experience avvincente e confortevole per qualsiasi dispositivo"
         />
         <Servizio
           title="Copywriting"
-          imageSrc="/image2@2x.jpg"
+          imageSrc="/notebook.png"
           text="Tessiamo le trame della tua presenza online promuovendo la tua attività con storytelling coinvolgenti e ottimizzati in chiave SEO"
         />
       </div>
