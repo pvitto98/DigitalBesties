@@ -17,7 +17,7 @@ const Contatti: FunctionComponent = () => {
           </div>
       </div>
 
-      <ContactForm/>
+      {/* <ContactForm/> */}
     </div>
   );
 };
