@@ -6,34 +6,34 @@ const Ticker = () => {
 <div className={styles.container}>
 <div className={styles.scroll}>
         <div className={styles.rightToLeft}>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
-        <p>Digital Besties</p>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
+        <img className={styles.longdigitalbesties} src="/longdigitalbesties.png"/>
         </div>
       </div>
     </div>
