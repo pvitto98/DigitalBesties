@@ -7,9 +7,11 @@ interface ServizioProps {
   title: string;
   imageSrc: string;
   text: string;
+  services: string[]; // Add this line
+
 }
 
-const Servizio: FunctionComponent<ServizioProps> = ({ title, imageSrc, text }) => {
+const Servizio: FunctionComponent<ServizioProps> = ({ title, imageSrc, text, services }) => {
   return (
     <div className={styles.servizio} data-aos="fade-up">
       <div className={styles.serviziocontent}>
@@ -20,6 +22,11 @@ const Servizio: FunctionComponent<ServizioProps> = ({ title, imageSrc, text }) =
       </div>
       <div className={styles.serviziotextcontainer}>
         <div className={styles.serviziotext}>{text}</div>
+        <ul>
+          {services.map((service, index) => (
+            <li key={index}>{service}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
