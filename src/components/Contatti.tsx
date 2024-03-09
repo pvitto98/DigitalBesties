@@ -2,6 +2,7 @@ import { FunctionComponent } from "react";
 import styles from "./Contatti.module.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
+import ContactForm from "./ExperimentalComponent/ContactForm";
 
 const Contatti: FunctionComponent = () => {
   return (
@@ -15,6 +16,8 @@ const Contatti: FunctionComponent = () => {
           <b className={`${styles.title} ${styles.sede}`} data-aos="fade-up" data-aos-delay="400">Sede: Torino</b>
           </div>
       </div>
+
+      <ContactForm/>
     </div>
   );
 };

@@ -271,7 +271,7 @@ h1 {
 }
 @media screen and (max-width: 426px) {
   .title {
-    font-size: var(--font-size-26xl);
+    font-size: var(--font-size-36xl);
     line-height: 50px;
   }
   .subtitle {
