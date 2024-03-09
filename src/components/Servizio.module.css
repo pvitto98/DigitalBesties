@@ -91,4 +91,31 @@
         gap: 10px 0;
       }
   }
+
   
+  @media screen and (orientation: landscape) {
+    .servizio {
+      /* Use Flexbox to position the title, image, description, and bullet points */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+
+    }
+  
+    .serviziocontent {
+      /* Position the title and image to the left */
+      order: 1;
+    }
+  
+    .serviziotextcontainer {
+      /* Position the description and bullet points to the right */
+      order: 2;
+      margin-top:50px;
+    }
+
+    .aos-animate {
+      animation-name: none !important;
+    }
+  }
+

@@ -298,3 +298,54 @@ h1 {
     height: 85vh;
   }
 }
+
+
+@media screen and (orientation: landscape) {
+  /* Your CSS rules for landscape mode go here */
+
+  .hero {
+    /* Adjust the height for landscape mode */
+    height: 85vh;
+  }
+
+  .title {
+    /* Adjust the font size for landscape mode */
+    font-size: var(--font-size-11xl);
+    line-height: 40px;
+  }
+
+  
+
+  .subtitle {
+    /* Adjust the font size for landscape mode */
+    font-size: var(--font-size-xs);
+  }
+
+  .contattaci {
+    /* Adjust the font size for landscape mode */
+    font-size: var(--font-size-xxs);
+  }
+
+
+  .contattacibutton {
+    /* Adjust the button size for landscape mode */
+    align-self: stretch;
+    width: auto;
+    /* Reduce the padding to make the button smaller */
+    padding: var(--padding-3xs) 5px;
+  }
+
+  .herobuttons {
+    /* Adjust the button layout for landscape mode */
+    flex-direction: column;
+    gap: var(--gap-3xs);
+  }
+
+  .herocontent {
+    /* Adjust the padding for landscape mode */
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+    margin-bottom: 0px;
+  }
+}

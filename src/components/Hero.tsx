@@ -24,6 +24,17 @@ const Hero: FunctionComponent = () => {
     }
   }, []);
 
+  
+  useEffect(() => {
+    const mq = window.matchMedia("(orientation: landscape)");
+    if (mq.matches) {
+      const buttons = document.querySelector("." + styles.herobuttons) as HTMLElement;
+      if (buttons) {
+        buttons.removeAttribute("data-aos");
+        buttons.removeAttribute("data-aos-delay");
+      }
+    }
+  }, []);
 
 
   return (
