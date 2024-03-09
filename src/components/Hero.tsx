@@ -32,11 +32,11 @@ const Hero: FunctionComponent = () => {
 
       <div className={styles.herocontent}>
         <div className={styles.herotext}>
-          <div className={styles.title}>
+          <div className={styles.title} data-aos="fade-up" data-aos-delay="200">
             <p className={styles.sulWebNon}>Sul web non ti </p>
             <p className={styles.sulWebNon}>si fila nessuno?</p>
           </div>
-          <div className={styles.subtitle}>Forse perché non ci conosci ancora...</div>
+          <div className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">Forse perché non ci conosci ancora...</div>
         </div>
         <div className={styles.herobuttons} data-aos="fade-up" data-aos-delay="400">
           <ContactFormContainer onButtonClick={onServiziButtonClick} />

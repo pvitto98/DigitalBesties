@@ -48,9 +48,9 @@
 }
 .chisiamotext {
   gap: 20px 0;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-3xl);
   color: var(--color-white);
-  font-family: var(--font-martian-mono);
+  font-family: var(--font-syne);
 }
 .title {
   width: 600px;
