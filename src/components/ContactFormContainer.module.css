@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 426px) and  (orientation: landscape) {
   .servizibutton {
     /* Adjust the button size for landscape mode */
     align-self: stretch;
