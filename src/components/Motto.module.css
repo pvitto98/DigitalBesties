@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 426px) and  (orientation: landscape) {
   .raccontiamoStorieAccendiamo {
     /* Adjust the font size for landscape mode */
     font-size: var(--font-size-21xl);
