@@ -11,7 +11,7 @@ interface ServizioProps {
 
 const Servizio: FunctionComponent<ServizioProps> = ({ title, imageSrc, text }) => {
   return (
-    <div className={styles.servizio} data-aos="fade-up" data-aos-delay="200">
+    <div className={styles.servizio} data-aos="fade-up">
       <div className={styles.serviziocontent}>
         <div className={styles.heading}>
           <div className={styles.serviziotitle}>{title}</div>

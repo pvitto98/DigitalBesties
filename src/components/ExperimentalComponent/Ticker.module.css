@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+  align-items: center;
+  /* height: 300px; */
+  /* overflow: hidden; */
+}
+
+.scroll{
+  white-space: nowrap;
+  /* margin: 0 2em; */
+}
+
+.scroll div {
+  display: flex;
+  gap:5em;
+}
+
+.rightToLeft {
+  animation: rightToLeft 50s linear infinite;
+  /* height: 300px; */
+}
+
+.p{
+  margin: 0;
+}
+@keyframes rightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

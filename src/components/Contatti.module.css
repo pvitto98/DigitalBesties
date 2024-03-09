@@ -35,6 +35,10 @@
   color: var(--color-black);
   font-family: var(--font-syne);
 }
+
+.sede{
+  margin-top: 50px
+}
 @media screen and (max-width: 426px) {
   .title {
     font-size: var(--font-size-lg);

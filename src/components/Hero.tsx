@@ -1,12 +1,11 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, useCallback, useEffect } from "react";
 import ContactFormContainer from "./ContactFormContainer";
 import styles from "./Hero.module.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
-
-AOS.init();
+import DripEffect from "./DripEffect"; // Assuming DripEffect contains the HTML and CSS for the liquid drop effect
+import Ticker from "./ExperimentalComponent/Ticker";
 
 const Hero: FunctionComponent = () => {
+  
   const onServiziButtonClick = useCallback(() => {
     const anchor = document.querySelector(
       "[data-scroll-to='iNostriServiziContainer']"
@@ -25,17 +24,19 @@ const Hero: FunctionComponent = () => {
     }
   }, []);
 
+
+
   return (
     <div className={styles.hero}>
+            {/* <Ticker /> */}
+
       <div className={styles.herocontent}>
         <div className={styles.herotext}>
-          <div className={styles.title} data-aos="fade-up" >
-            <p className={styles.sulWebNon}>{`Sul web non ti `}</p>
+          <div className={styles.title}>
+            <p className={styles.sulWebNon}>Sul web non ti </p>
             <p className={styles.sulWebNon}>si fila nessuno?</p>
           </div>
-          <div className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
-            Forse perché non ci conosci ancora...
-          </div>
+          <div className={styles.subtitle}>Forse perché non ci conosci ancora...</div>
         </div>
         <div className={styles.herobuttons} data-aos="fade-up" data-aos-delay="400">
           <ContactFormContainer onButtonClick={onServiziButtonClick} />
@@ -49,6 +50,11 @@ const Hero: FunctionComponent = () => {
           </button>
         </div>
       </div>
+      {/* <div id="liquid-container" className={styles.liquidContainer}>
+      </div> */}
+
+
+
     </div>
   );
 };

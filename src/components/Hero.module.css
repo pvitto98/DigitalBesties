@@ -67,7 +67,7 @@
 }
 .herocontent {
   align-items: center;
-  padding: var(--padding-81xl) 0;
+  padding: var(--padding-31xl) 0;
   gap: 30px 0;
   z-index: 3;
   margin-bottom: 150px;
@@ -138,6 +138,125 @@ h1 {
     transform: translateX(25%);
   }
 }
+
+
+/* Add this CSS to your existing stylesheets or create a new one */
+
+/* Define the liquid drop effect */
+@keyframes liquid {
+  from {
+    height: 15px;
+  }
+  to {
+    height: 109%;
+  }
+}
+
+/* Style for the container */
+.liquidContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure the drops don't interfere with clicks */
+}
+
+/* Style for the liquid drop */
+.blob {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0px 0;
+  background: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  animation: drip_one 5s infinite;
+}
+
+/* Customize specific drops */
+.blob:nth-of-type(4n-7) {
+  width: 65px;
+  animation: drip_four 5s infinite;
+}
+
+.blob:nth-of-type(3n-2) {
+  width: 26px;
+}
+
+.blob:nth-of-type(2) {
+  width: 22px;
+}
+
+.blob:nth-of-type(8) {
+  animation: drip_five 5s infinite;
+}
+
+.blob:nth-of-type(4n+2) {
+  height: 56px;
+  animation: drip_two 5s infinite;
+}
+
+.blob:nth-of-type(6n-2) {
+  height: 42px;
+  animation: drip_three 5s infinite;
+}
+
+/* Define keyframe animations for different types of drops */
+@keyframes drip_one {
+  from {
+    top: 0;
+  }
+  to {
+    top: 103%;
+  }
+}
+
+@keyframes drip_two {
+  from {
+    top: 0;
+  }
+  to {
+    top: 104%;
+  }
+}
+
+@keyframes drip_three {
+  from {
+    top: 0;
+    height: 52px;
+  }
+  to {
+    top: 102%;
+    height: 132px;
+  }
+}
+
+@keyframes drip_four {
+  from {
+    top: 0;
+    width: 65px;
+    height: 30px;
+  }
+  to {
+    top: 102%;
+    width: 75px;
+    height: 45px;
+  }
+}
+
+@keyframes drip_five {
+  from {
+    top: 0;
+    height: 30px;
+  }
+  to {
+    top: 102%;
+    height: 72px;
+  }
+}
+
+
 
 
 @media screen and (max-width: 960px) {

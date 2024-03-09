@@ -12,7 +12,8 @@ const Contatti: FunctionComponent = () => {
           <a href="mailto:digitalbestiesagency@gmail.com" className={styles.email} data-aos="fade-up" data-aos-delay="200">
             <b>{`digitalbestiesagency@gmail.com`}</b>
           </a>
-        </div>
+          <b className={`${styles.title} ${styles.sede}`} data-aos="fade-up" data-aos-delay="400">Sede: Torino</b>
+          </div>
       </div>
     </div>
   );
