@@ -1,13 +1,13 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     background-color: var(--color-dimgray-200);
-    width: 100%;
-    height: 100%;
-}
+    width: 100vw;
+    height: 100vh;
+  }
 
 .longdigitalbesties {
     height: clamp(60px, 100vw / 10, 100px);
