@@ -6,6 +6,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
     background-color: var(--color-dimgray-200);
     width: 100vw;
     height: 100vh;
