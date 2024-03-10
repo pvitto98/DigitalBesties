@@ -46,18 +46,18 @@ function App() {
     }
 
     // Simulate a loading delay, then set isLoading to false
-    setTimeout(() => setIsLoading(false), 1500);
+    // setTimeout(() => setIsLoading(false), 1500);
   }, [pathname]);
 
-  // If the app is loading, render a loading screen
-  if (isLoading) {
-    return <div className={loadingStyles.container}>
-      <img className={loadingStyles.longdigitalbesties} src="/longdigitalbesties.png"/>
-      <div className={loadingStyles.progress}>
-        <div className={loadingStyles.color}></div>
-      </div>
-    </div>;
-  }
+  //If the app is loading, render a loading screen
+  // if (isLoading) {
+  //   return <div className={loadingStyles.container}>
+  //     <img className={loadingStyles.longdigitalbesties} src="/longdigitalbesties.png"/>
+  //     <div className={loadingStyles.progress}>
+  //       <div className={loadingStyles.color}></div>
+  //     </div>
+  //   </div>;
+  // }
 
   return (
     <Routes>
