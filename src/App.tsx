@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Routes,
   Route,
@@ -6,11 +6,14 @@ import {
   useLocation,
 } from "react-router-dom";
 import DigitalBesties from "./pages/DigitalBesties";
-
+import loadingStyles from "./components/Loading.module.css";
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
+
+  // Add a new state variable for tracking loading status
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (action !== "POP") {
@@ -41,7 +44,20 @@ function App() {
         metaDescriptionTag.content = metaDescription;
       }
     }
+
+    // Simulate a loading delay, then set isLoading to false
+    setTimeout(() => setIsLoading(false), 1500);
   }, [pathname]);
+
+  // If the app is loading, render a loading screen
+  if (isLoading) {
+    return <div className={loadingStyles.container}>
+      <img className={loadingStyles.longdigitalbesties} src="/longdigitalbesties.png"/>
+      <div className={loadingStyles.progress}>
+        <div className={loadingStyles.color}></div>
+      </div>
+    </div>;
+  }
 
   return (
     <Routes>
@@ -49,4 +65,5 @@ function App() {
     </Routes>
   );
 }
+
 export default App;
