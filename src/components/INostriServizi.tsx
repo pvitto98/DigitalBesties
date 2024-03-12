@@ -15,15 +15,15 @@ const INostriServizi: FunctionComponent = () => {
           I nostri servizi
         </div>
       </div>
-      <div className={styles.inostriservizicontent} >
+      <div className={styles.inostriservizicontent}>
         <Servizio
           title="Social Media Marketing"
           imageSrc="/smartphone.png"
           text="Studiamo e curiamo le tue piattaforme social per dare ai tuoi progetti la visibilità e il valore che meritano"
           services={[
-            "Gestione strategie social media",
-            "Creazione contenuti visual coinvolgenti",
-            "Ottimizzazione annunci sui social"
+            "Digital Strategy",
+            "Content Marketing e Advertising",
+            "Social Media Management"
           ]}
         />
         <Servizio
@@ -31,9 +31,8 @@ const INostriServizi: FunctionComponent = () => {
           imageSrc="/desktop.png"
           text="Sviluppiamo siti web in grado di incorniciare la tua idea in una User Experience avvincente e confortevole per qualsiasi dispositivo"
           services={[
-            "Website design & development",
-            "Mobile app design & development",
-            "Full-stack development"
+            "Sviluppo siti web ed e-commerce",
+            "Sviluppo app mobile native e multipiattaforma"
           ]}
         />
         <Servizio
@@ -41,9 +40,9 @@ const INostriServizi: FunctionComponent = () => {
           imageSrc="/notebook.png"
           text="Tessiamo le trame della tua presenza online promuovendo la tua attività con storytelling coinvolgenti e ottimizzati in chiave SEO"
           services={[
-            "Copywriting SEO ottimizzato",
-            "Definizione Brand Identity",
-            "Traduzione e adattamento in lingua inglese"
+            "Analisi e Strategia SEO",
+            "Branding e posizionamento",
+            "Storytelling"
           ]}
         />
       </div>
