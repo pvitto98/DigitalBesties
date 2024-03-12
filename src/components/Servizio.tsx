@@ -22,11 +22,11 @@ const Servizio: FunctionComponent<ServizioProps> = ({ title, imageSrc, text, ser
       </div>
       <div className={styles.serviziotextcontainer}>
         <div className={styles.serviziotext}>{text}</div>
-        <ul>
-          {services.map((service, index) => (
-            <li key={index}>{service}</li>
+        <div className={styles.servizioservices}>
+          {services.map((service) => (
+            <div className={styles.bullet}>{service}</div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

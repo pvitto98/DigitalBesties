@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @keyframes tilt-in-top-1 {
   0% {
     transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
@@ -48,9 +50,9 @@
 }
 .chisiamotext {
   gap: 20px 0;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-xl);
   color: var(--color-white);
-  font-family: var(--font-syne);
+  font-family: 'Poppins', sans-serif;
 }
 .title {
   width: 600px;

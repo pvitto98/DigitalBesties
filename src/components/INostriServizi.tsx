@@ -31,7 +31,7 @@ const INostriServizi: FunctionComponent = () => {
           imageSrc="/desktop.png"
           text="Sviluppiamo siti web in grado di incorniciare la tua idea in una User Experience avvincente e confortevole per qualsiasi dispositivo"
           services={[
-            "Sviluppo siti web ed e-commerce",
+            "Sviluppo siti web ed E-commerce",
             "Sviluppo app mobile native e multipiattaforma"
           ]}
         />

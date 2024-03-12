@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 .servizio {
-    height: 570px;
+    height: 580px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,9 +58,15 @@
     align-items: flex-start;
     justify-content: center;
     text-align: center;
-    font-size: var(--font-size-lg);
-    font-family: var(--font-syne);  }
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
   
+  .bullet{
+    color: var(--color-khaki);
+
+  }
+
   .serviziotext {
     align-self: stretch;
     position: relative;
@@ -67,6 +74,10 @@
   
   .servizio.animate {
     animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+  }
+
+  .servizioservices{
+    margin-top: 20px;
   }
 
 
