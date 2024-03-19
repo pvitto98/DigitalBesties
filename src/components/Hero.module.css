@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .sulWebNon {
   margin: 0;
 }
@@ -25,7 +27,9 @@
 .contattaci {
   position: relative;
   font-size: var(--font-size-base);
-  font-family: var(--font-martian-mono);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
   color: var(--color-khaki);
   text-align: center;
 }
@@ -88,6 +92,53 @@
   font-family: var(--font-abril-fatface);
   height: 100vh; /* Subtract the height of the navbar from 100vh */
 }
+
+.iNostriServizi {
+  position: relative;
+  font-size: var(--font-size-mini);
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-black);
+  font-weight: bold;
+  text-align: center;
+}
+.button,
+.servizibutton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.servizibutton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) 18.924102783203125px;
+  background-color: var(--color-lightsalmon);
+  border-radius: 63.08px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+}
+@media screen and (max-width: 420px) {
+  .iNostriServizi {
+    font-size: var(--font-size-xs);
+  }
+  .servizibutton {
+    align-self: stretch;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 426px) and  (orientation: landscape) {
+  .servizibutton {
+    /* Adjust the button size for landscape mode */
+    align-self: stretch;
+    width: auto;
+    /* Reduce the padding to make the button smaller */
+    padding: var(--padding-3xs) 5px;
+  }
+
+}
+
+
 
 /* .bg {
   animation: slide 3s ease-in-out infinite alternate;
