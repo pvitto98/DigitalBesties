@@ -6,31 +6,24 @@
     0-1.2px 0#ffe194;
 }
 .navbar {
-  margin-top: 20px;
   align-self: stretch;
-  height: 70px;
+  height: 65px;
   background-color: var(--color-dimgray-200);
-  /* box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25); */
-  box-shadow: 40px 4px 40px rgba(0, 0, 0, 0.25);
-
-  /* display: flex;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: var(--padding-6xl) var(--padding-31xl);
   box-sizing: border-box;
   z-index: 2;
-  text-align: center; */
+  text-align: center;
   font-size: var(--font-size-11xl);
   color: var(--color-mediumvioletred);
   font-family: var(--font-lily-script-one);
-  z-index: 3;
 }
 @media screen and (max-width: 420px) {
   .logo {
     font-size: var(--font-size-11xl);
-  }
-  .navbar{
-    height: 50px;
   }
 }

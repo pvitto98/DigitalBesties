@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import {
   Routes,
   Route,
@@ -6,14 +6,14 @@ import {
   useLocation,
 } from "react-router-dom";
 import DigitalBesties from "./pages/DigitalBesties";
-import loadingStyles from "./components/Loading.module.css";
+import Frame from "./components/Frame16";
+import ChiSiamoNuovo from "./pages/ChiSiamoNuovo";
+import Hero1 from "./pages/Hero1";
+
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
-
-  // Add a new state variable for tracking loading status
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (action !== "POP") {
@@ -27,6 +27,18 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/frame-16":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/chisiamo-nuovo":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/hero2":
         title = "";
         metaDescription = "";
         break;
@@ -44,26 +56,15 @@ function App() {
         metaDescriptionTag.content = metaDescription;
       }
     }
-
-    // Simulate a loading delay, then set isLoading to false
-    // setTimeout(() => setIsLoading(false), 1500);
   }, [pathname]);
-
-  //If the app is loading, render a loading screen
-  // if (isLoading) {
-  //   return <div className={loadingStyles.container}>
-  //     <img className={loadingStyles.longdigitalbesties} src="/longdigitalbesties.png"/>
-  //     <div className={loadingStyles.progress}>
-  //       <div className={loadingStyles.color}></div>
-  //     </div>
-  //   </div>;
-  // }
 
   return (
     <Routes>
       <Route path="/" element={<DigitalBesties />} />
+      <Route path="/frame-16" element={<Frame />} />
+      <Route path="/chisiamo-nuovo" element={<ChiSiamoNuovo />} />
+      <Route path="/hero2" element={<Hero1 />} />
     </Routes>
   );
 }
-
 export default App;

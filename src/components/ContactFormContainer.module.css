@@ -30,14 +30,3 @@
     width: auto;
   }
 }
-
-@media screen and (max-width: 426px) and  (orientation: landscape) {
-  .servizibutton {
-    /* Adjust the button size for landscape mode */
-    align-self: stretch;
-    width: auto;
-    /* Reduce the padding to make the button smaller */
-    padding: var(--padding-3xs) 5px;
-  }
-
-}
