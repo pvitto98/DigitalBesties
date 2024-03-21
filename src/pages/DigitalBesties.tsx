@@ -6,6 +6,7 @@ import ChiSiamo from "../components/ChiSiamo";
 import INostriServizi from "../components/INostriServizi";
 import Contatti from "../components/Contatti";
 import styles from "./DigitalBesties.module.css";
+import Frame from "../components/Frame16";
 
 const DigitalBesties: FunctionComponent = () => {
   return (
@@ -13,7 +14,7 @@ const DigitalBesties: FunctionComponent = () => {
       <Navbar />
       <Hero />
       <Motto />
-      <ChiSiamo />
+      <Frame />
       <INostriServizi />
       <Contatti />
     </div>
