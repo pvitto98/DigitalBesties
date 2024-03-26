@@ -50,7 +50,16 @@ const Hero: FunctionComponent = () => {
           <div className={styles.subtitle} >Forse perché non ci conosci ancora...</div>
         </div>
         <div className={styles.herobuttons} data-aos="fade-up" data-aos-delay="400">
-          <ContactFormContainer onButtonClick={onServiziButtonClick} />
+          <button
+            className={styles.servizibutton}
+            onClick={onServiziButtonClick}
+          >
+            <div className={styles.button}>
+              <div className={styles.iNostriServizi}>I Nostri Servizi</div>
+            </div>
+          </button>      
+          
+          
           <button
             className={styles.contattacibutton}
             onClick={onContattaciButtonClick}

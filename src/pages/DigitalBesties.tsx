@@ -7,15 +7,62 @@ import INostriServizi from "../components/INostriServizi";
 import Contatti from "../components/Contatti";
 import styles from "./DigitalBesties.module.css";
 import Frame from "../components/Frame16";
+import Hero1 from "./Hero1";
+import NavbarNew from "../components/NavBarNew";
+import Wave from "react-wavify";
 
 const DigitalBesties: FunctionComponent = () => {
   return (
     <div className={styles.digitalbesties}>
-      <Navbar />
-      <Hero />
+      <NavbarNew />
+      <Hero1 />
+      <Wave
+    fill="#ce6a85"
+    paused={false}
+    options={{
+      height: 50,
+      amplitude: 40,
+      speed: 0.2,
+      points: 5,
+    }}
+    style={{position: "relative", top: "0px", zIndex: 1, backgroundColor: "#e3e3e3", scale: "1.08"}}
+  />
       <Motto />
+      <Wave
+    fill="#6c4159"
+    paused={false}
+    options={{
+      height: 50,
+      amplitude: 40,
+      speed: 0.2,
+      points: 5,
+    }}
+    style={{position: "relative", top: "0px", zIndex: 1, backgroundColor: "#ce6a85", scale: "1.08"}}
+  />
       <Frame />
+      <Wave
+    fill="#5c374c"
+    paused={false}
+    options={{
+      height: 50,
+      amplitude: 40,
+      speed: 0.2,
+      points: 5,
+    }}
+    style={{position: "relative", top: "0px", zIndex: 1, backgroundColor: "#5c374c", scale: "1.08"}}
+  />
       <INostriServizi />
+      <Wave
+    fill="#ce6a85"
+    paused={false}
+    options={{
+      height: 50,
+      amplitude: 40,
+      speed: 0.2,
+      points: 5,
+    }}
+    style={{position: "relative", top: "0px", zIndex: 1, backgroundColor: "#e3e3e3", scale: "1.08"}}
+  />
       <Contatti />
     </div>
   );
