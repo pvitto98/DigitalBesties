@@ -1,0 +1,76 @@
+.logoframeIcon {
+  width: 50px;
+  position: relative;
+  height: 51.3px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.hiSiamo {
+  text-transform: lowercase;
+}
+.chisiamo {
+  position: relative;
+  font-weight: 600;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-6xl);
+}
+.clipPathGroup {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  display: none;
+}
+.navbar,
+.navigation {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navigation {
+  overflow: hidden;
+  justify-content: flex-end;
+  gap: var(--gap-6xl);
+}
+.navbar {
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-31xl);
+  z-index: 2;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-dimgray-100);
+  font-family: var(--font-poppins);
+  background-color: #e3e3e3;
+
+}
+@media screen and (max-width: 960px) {
+  .chisiamo {
+    font-size: var(--font-size-xl);
+  }
+  .links {
+    display: none;
+  }
+  .clipPathGroup {
+    display: flex;
+  }
+}
+@media screen and (max-width: 420px) {
+  .chisiamo {
+    font-size: var(--font-size-mini);
+  }
+  .links {
+    display: none;
+  }
+  .clipPathGroup {
+    display: flex;
+  }
+  .navbar {
+    padding: var(--padding-mini) var(--padding-21xl);
+  }
+}

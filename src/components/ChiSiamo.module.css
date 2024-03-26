@@ -93,9 +93,10 @@
   animation: 15s ease 0s infinite forwards rotate-90-cw;
 }
 .chiSiamo {
-  background-image: url('../../public/wave-haikei\ \(4\).svg');
+  /* background-image: url('../../public/wave-haikei\ \(4\).svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  z-index: 2;
   align-self: stretch;
   background-color: var(--color-dimgray-200);
   display: flex;
