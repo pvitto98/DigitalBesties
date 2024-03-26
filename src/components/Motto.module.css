@@ -16,6 +16,7 @@
     transform: rotate(90deg);
   }
 }
+
 .ilNostroCredo,
 .raccontiamoStorieAccendiamo {
   align-self: stretch;
@@ -28,7 +29,7 @@
 }
 .raccontiamoStorieAccendiamo {
   height: 335px;
-  font-size: var(--font-size-31xl);
+  font-size: 60px;
   font-family: var(--font-abril-fatface);
   color: var(--color-black);
   opacity: 1;
@@ -45,8 +46,9 @@
   justify-content: flex-start;
   padding: var(--padding-31xl) 0;
   box-sizing: border-box;
-  gap: 20px 0;
-  z-index: 0;
+  gap: 50px 0;
+  z-index: 3;
+  height: 100%;
 }
 .mottoimageIcon {
   height: 400px;
@@ -75,9 +77,10 @@
   position: relative;
   gap: 0 441px;
   text-align: left;
-  font-size: var(--font-size-xl);
+  font-size: clamp(5px, 4vw, 20px);
   color: var(--color-white);
   font-family: var(--font-martian-mono);
+  height: 60vh;
   z-index:1;
 }
 @media screen and (max-width: 960px) {
@@ -89,26 +92,28 @@
     height: 60vh;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 680px) {
   .raccontiamoStorieAccendiamo {
-    font-size: var(--font-size-13xl);
+    font-size: var(--font-size-11xl);
+    height: 100%;
   }
   .title {
     align-self: stretch;
     width: auto;
     padding: 0px;
+    gap: 20px 0;
   }
   .motto {
     padding-left: var(--padding-11xl);
     padding-right: var(--padding-11xl);
     box-sizing: border-box;
-    
+    height: 100%;
   }
   .mottoimageIcon{
-    height: 200px;
-    top:80%;
+    height: 180px;
+    top:60%;
     right: 0%;
-  
+    visibility: hidden;
   }
 }
 

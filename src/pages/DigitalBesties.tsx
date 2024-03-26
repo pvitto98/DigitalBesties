@@ -6,6 +6,7 @@ import ChiSiamo from "../components/ChiSiamo";
 import INostriServizi from "../components/INostriServizi";
 import Contatti from "../components/Contatti";
 import styles from "./DigitalBesties.module.css";
+import Frame from "../components/Frame16";
 import Hero1 from "./Hero1";
 import NavbarNew from "../components/NavBarNew";
 import Wave from "react-wavify";
@@ -38,7 +39,7 @@ const DigitalBesties: FunctionComponent = () => {
     }}
     style={{position: "relative", top: "0px", zIndex: 1, backgroundColor: "#ce6a85", scale: "1.08"}}
   />
-      <ChiSiamo />
+      <Frame />
       <Wave
     fill="#5c374c"
     paused={false}
