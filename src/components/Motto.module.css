@@ -95,9 +95,12 @@
 @media screen and (max-width: 680px) {
   .raccontiamoStorieAccendiamo {
     font-size: var(--font-size-11xl);
-    height: 100%;
+    height: 150px;
+    text-align: center;
   }
   .title {
+    text-align: center;
+
     align-self: stretch;
     width: auto;
     padding: 0px;

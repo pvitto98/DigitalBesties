@@ -1,11 +1,11 @@
 import { FunctionComponent, useCallback, useEffect } from "react";
-import styles from "./Frame16.module.css";
+import styles from "./ChiSiamoNew.module.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 import Ticker from "./ExperimentalComponent/Ticker";
 
 
-const Frame: FunctionComponent = () => {
+const ChiSiamoNew: FunctionComponent = () => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -68,15 +68,8 @@ const Frame: FunctionComponent = () => {
                 <span className={styles.span}>{` `}</span>
                 <span className={styles.digitalBesties}>Digital Besties</span>
               </div>
-            </div>
-            <img
-        className={styles.chisiamoimageIcon}
-        alt=""
-        src="/ChiSiamo1Icon.svg"
-      />
-          </div>
-          <div className={styles.text1}>
-            <div
+              <br/>
+              <div
               className={styles.ilNostroModoContainer }
               data-aos="fade-up"
             >
@@ -86,7 +79,16 @@ const Frame: FunctionComponent = () => {
               </span>
               <span>.</span>
             </div>
+            </div>
+            <img
+        className={styles.chisiamoimageIcon}
+        alt=""
+        src="/ChiSiamo1Icon.svg"
+      />
           </div>
+          {/* <div className={styles.text1}>
+
+          </div> */}
       </div>   
       </div>
       
@@ -162,4 +164,4 @@ const Frame: FunctionComponent = () => {
   );
 };
 
-export default Frame;
+export default ChiSiamoNew;
