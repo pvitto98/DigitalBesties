@@ -1,0 +1,182 @@
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-90-cw {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+.title {
+  align-self: stretch;
+  height: 83px;
+  position: relative;
+  text-decoration: underline;
+  font-weight: 800;
+  display: inline-block;
+  opacity: 0;
+}
+.title.animate {
+  animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+}
+.siamoUnTeam,
+.span {
+  font-family: var(--font-poppins);
+}
+.span {
+  font-weight: 500;
+}
+.digitalBesties {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.siamoUnTeamContainer {
+  align-self: stretch;
+  height: 300px;
+  position: relative;
+  line-height: 50px;
+  display: inline-block;
+  opacity: 0;
+}
+.siamoUnTeamContainer.animate {
+  animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
+}
+.text {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vectorIcon {
+  width: 300px;
+  position: relative;
+  height: 300px;
+  z-index: 0;
+}
+.vectorIcon1 {
+  width: 99.34%;
+  position: absolute;
+  margin: 0 !important;
+  height: 99.34%;
+  top: 0.33%;
+  right: 0.33%;
+  bottom: 0.33%;
+  left: 0.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.animation,
+.textAnimation {
+  display: flex;
+  flex-direction: row;
+}
+.animation {
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs);
+  position: relative;
+  gap: var(--gap-3xs);
+  opacity: 1;
+}
+.animation.animate {
+  animation: 15s ease 0s infinite reverse forwards rotate-90-cw;
+}
+.textAnimation {
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-81xl);
+  font-size: var(--font-size-7xl);
+  color: var(--color-white);
+}
+.chisiamo1,
+.chisiamo1content {
+  display: flex;
+  justify-content: flex-start;
+}
+.chisiamo1content {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-31xl) 0;
+  gap: var(--gap-11xl);
+}
+.chisiamo1 {
+  width: 1200px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-81xl);
+  box-sizing: border-box;
+  background-image: url(/public/chisiamo1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-36xl);
+  color: var(--color-khaki);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 960px) {
+  .siamoUnTeamContainer,
+  .title {
+    text-align: center;
+  }
+  .text {
+    align-self: stretch;
+    width: auto;
+    flex: unset;
+  }
+  .vectorIcon,
+  .vectorIcon1 {
+    width: 180px;
+  }
+  .textAnimation {
+    flex-direction: column;
+    gap: 20px 100px;
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+  .chisiamo1content {
+    flex: unset;
+    align-self: stretch;
+  }
+  .chisiamo1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-81xl) var(--padding-31xl) var(--padding-6xl);
+    box-sizing: border-box;
+    gap: var(--gap-31xl);
+  }
+}
+@media screen and (max-width: 420px) {
+  .chisiamo1content {
+    align-self: stretch;
+    width: auto;
+    padding-top: var(--padding-81xl);
+    box-sizing: border-box;
+  }
+  .chisiamo1 {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}

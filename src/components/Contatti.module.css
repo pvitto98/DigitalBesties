@@ -8,12 +8,10 @@
   line-height: 0%;
   font-family: var(--font-abril-fatface);
   display: inline-block;
-  color: inherit; /* Add this to change the color */
-  text-decoration: none; /* Add this to remove the underline */
 }
 .contattitext {
   align-self: stretch;
-  gap: 18px 0;
+  gap: var(--gap-lg);
 }
 .contatti,
 .contatticontent,
@@ -25,36 +23,18 @@
 }
 .contatti {
   align-self: stretch;
-  background-color: #ce6a85;
-  /* padding: var(--padding-181xl) 0; */
+  background-color: var(--color-palevioletred);
+  padding: var(--padding-181xl) 0;
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-syne);
-  z-index: 2;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
 }
-
-.sede{
-  margin-top: 50px
-}
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 420px) {
   .title {
     font-size: var(--font-size-lg);
   }
   .email {
-    font-size: var(--font-size-lg);
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .title {
-    font-size: var(--font-size-lg);
-  }
-  .email {
-    font-size: var(--font-size-mini);
+    font-size: var(--font-size-xl);
   }
 }

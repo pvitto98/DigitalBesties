@@ -1,7 +1,5 @@
 import { FunctionComponent, useEffect } from "react";
 import styles from "./ChiSiamo.module.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 
 const ChiSiamo: FunctionComponent = () => {
   useEffect(() => {
@@ -36,30 +34,29 @@ const ChiSiamo: FunctionComponent = () => {
   return (
     <div className={styles.chiSiamo}>
       <div className={styles.title}>
-        <div className={styles.chiSiamo1} data-aos="fade-up">
+        <div className={styles.chiSiamo1} data-animate-on-scroll>
           Chi Siamo
         </div>
-        <div className={styles.chisiamotext} data-aos="fade-up">
-          <div className={styles.siamoUnTeam} >
-          Siamo un team di freelancers e una web agency in costruzione, ma ancor prima siamo persone che continuano a scegliersi sin dai banchi di liceo e che hanno deciso di tradurre le proprie competenze in uno spazio eclettico e creativo: Digital Besties. 
+        <div className={styles.chisiamotext}>
+          <div className={styles.siamoUnTeam} data-animate-on-scroll>
+            Siamo un team di freelancers e una web agency in costruzione, ma
+            ancor prima siamo persone che continuano a scegliersi sin dai banchi
+            di liceo, e che nel mezzo dei vent'anni hanno deciso di unire le
+            proprie passioni e specialità in uno spazio di menti creative
+            interconnesse: Digital Besties.
           </div>
-          <div className={styles.iNostriDifferenti} >
-          Il nostro modo di fare comunicazione è frutto di differenti percorsi accademici che arricchiscono il nostro lavoro con un taglio critico e trasversale.
-          <br />
-          Unendo competenze multidisciplinari e passione per il digitale, arricchiamo progetti web e social in ottica strategica e innovativa secondo le esigenze di aziende, professionisti e realtà che intendono rivoluzionare la loro presenza online ━ il tutto accompagnato dalla freschezza GenZ che ci distingue. 
+          <div className={styles.iNostriDifferenti} data-animate-on-scroll>
+            I nostri differenti percorsi di vita e punti di vista sono la
+            risorsa guida verso progetti web e social strategici e lungimiranti,
+            cuciti sulle aziende, professionisti e realtà che intendono
+            rivoluzionare la loro presenza online. Il nostro approccio è fresco,
+            innovativo, critico e inclusivo (voce del verbo GenZ di fine anni
+            90).
           </div>
-          <div className={styles.iNostriDifferenti} >
-          E ora vieni qua e racconta alle tue Digital Besties perché la tua comunicazione online ha avuto l'efficacia dei caroselli su Facebook!          </div>
         </div>
       </div>
       <img
         className={styles.chisiamoimageIcon}
-        alt=""
-        src="/chisiamoimage.svg"
-        data-animate-on-scroll
-      />
-            <img
-        className={styles.chisiamoimageIcon2}
         alt=""
         src="/chisiamoimage.svg"
         data-animate-on-scroll
