@@ -34,7 +34,7 @@ const INostriServiziNew: FunctionComponent = () => {
   }, []);
 
   return (
-    <div className={styles.inostriserviziNew}>
+    <div className={styles.inostriserviziNew} data-scroll-to="iNostriServiziNew">
       <div className={styles.chisiamo1content}>
         <div className={styles.title} data-animate-on-scroll>
           I Nostri Servizi

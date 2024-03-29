@@ -6,7 +6,7 @@ import Wave from "react-wavify";
 const Hero1: FunctionComponent = () => {
   const onServiziButtonClick = useCallback(() => {
     const anchor = document.querySelector(
-      "[data-scroll-to='iNostriServiziContainer']"
+      "[data-scroll-to='iNostriServiziNew']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });

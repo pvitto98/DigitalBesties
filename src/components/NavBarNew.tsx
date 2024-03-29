@@ -4,7 +4,7 @@ import styles from "./NavBarNew.module.css";
 const NavbarNew: FunctionComponent = () => {
   return (
     <div className={styles.navbar}>
-      <img className={styles.logoframeIcon} alt="" src="/logoframe@2x.png" />
+      <img className={styles.logoframeIcon} alt="" src="/longdigitalbesties.png" />
       {/* <div className={styles.navigation}>
         <div className={styles.links}>
           <div className={styles.chisiamo}>
