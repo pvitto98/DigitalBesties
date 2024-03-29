@@ -1,0 +1,105 @@
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+.abbiamoUnServizio,
+.title {
+  align-self: stretch;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+}
+.title {
+  /* height: 83px; */
+  font-weight: 800;
+}
+.title.animate {
+  animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+}
+.abbiamoUnServizio {
+  /* height: 50px; */
+  /* line-height: 50px; */
+}
+.abbiamoUnServizio.animate {
+  animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
+}
+.servizicontainer,
+.text {
+  align-self: stretch;
+  flex-direction: column;
+}
+.text {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(15px,4vw,23px);
+}
+.servizicontainer {
+  align-items: flex-start;
+  gap: var(--gap-11xl);
+}
+.chisiamo1content,
+.inostriserviziNew,
+.servizicontainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.chisiamo1content {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-11xl);
+}
+.inostriserviziNew {
+  background-color: var(--color-gainsboro);
+  /* max-width: 100%; */
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-81xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: clamp(40px,4vw,55px);
+  color: var(--color-dimgray-300);
+  font-family: var(--font-poppins);
+  width: 100vw;
+  z-index: 2;
+}
+@media screen and (max-width: 960px) {
+  .abbiamoUnServizio,
+  .title {
+    text-align: center;
+  }
+  .text {
+    align-self: stretch;
+    width: auto;
+  }
+  .inostriserviziNew {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-81xl) var(--padding-31xl) var(--padding-6xl);
+    box-sizing: border-box;
+    gap: var(--gap-31xl);
+  }
+}
+@media screen and (max-width: 420px) {
+  .chisiamo1content {
+    align-self: stretch;
+    width: auto;
+    padding-top: var(--padding-81xl);
+    box-sizing: border-box;
+  }
+  .inostriserviziNew {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
