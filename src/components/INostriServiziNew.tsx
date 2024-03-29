@@ -1,5 +1,5 @@
 import { FunctionComponent, useEffect } from "react";
-import Servizio from "./Servizio";
+import Servizio from "./Servizio1";
 import styles from "./INostriServiziNew.module.css";
 
 const INostriServiziNew: FunctionComponent = () => {
@@ -32,6 +32,7 @@ const INostriServiziNew: FunctionComponent = () => {
       }
     };
   }, []);
+
   return (
     <div className={styles.inostriserviziNew}>
       <div className={styles.chisiamo1content}>
@@ -47,78 +48,32 @@ const INostriServiziNew: FunctionComponent = () => {
           <Servizio
             servizioTitle="Social Media Marketing"
             servizioText="Gestiamo i tuoi account sui social media per aumentare la tua visibilità online e coinvolgere il tuo pubblico target."
-            digitalStrategy="Digital Strategy"
-            contentMarketingEAdvertis="Content Marketing e Advertising"
-            socialMediaManagement="Social Media Management"
+            services={[
+              { name: "Digital Strategy", description: "Digital Strategy" },
+              { name: "Content Marketing e Advertising", description: "Content Marketing e Advertising" },
+              { name: "Social Media Management", description: "Social Media Management" },
+            ]}
+            imageSrc="/smartphone.png"
           />
           <Servizio
             servizioTitle="Web Development"
             servizioText="Creiamo siti web che si adattano a tutti i dispositivi e offrono un'esperienza utente fluida e piacevole."
-            servizioTextWidth="384px"
-            propMargin="unset"
-            propFontFamily="Poppins"
-            propFontSize="25px"
-            propPaddingLeft="unset"
-            propAlignSelf="stretch"
-            propPosition="relative"
-            propFontWeight="600"
-            propColor="#e9e9e9"
-            propTextAlign="center"
-            propDisplay="inline-block"
-            propMargin1="unset"
-            propFontFamily1="Poppins"
-            propFontSize1="25px"
-            propPaddingLeft1="unset"
-            propAlignSelf1="stretch"
-            propPosition1="relative"
-            propFontWeight1="600"
-            propColor1="#e9e9e9"
-            propTextAlign1="center"
-            propDisplay1="inline-block"
+            services={[
+              { name: "Sviluppo Siti Web", description: "Sviluppo Siti Web" },
+              { name: "Sviluppo E commerce", description: "Sviluppo E commerce" },
+              { name: "Sviluppo App Mobile", description: "Sviluppo App Mobile" },
+            ]}
+            imageSrc="/desktop.png"
           />
           <Servizio
             servizioTitle="Copywriting"
             servizioText="Scriviamo testi persuasivi e coinvolgenti per promuovere la tua azienda o prodotto."
-            digitalStrategy="Analisi e Strategia SEO"
-            contentMarketingEAdvertis="Branding e posizionamento"
-            socialMediaManagement="Storytelling"
-            servizioTextWidth="259px"
-            propMargin="0"
-            propFontFamily="inherit"
-            propFontSize="inherit"
-            propPaddingLeft="33px"
-            propAlignSelf="unset"
-            propPosition="unset"
-            propFontWeight="unset"
-            propColor="unset"
-            propTextAlign="unset"
-            propDisplay="unset"
-            socialMediaManagementAlignSelf="stretch"
-            socialMediaManagementPosition="relative"
-            socialMediaManagementFontSize="25px"
-            socialMediaManagementFontWeight="600"
-            socialMediaManagementFontFamily="Poppins"
-            socialMediaManagementColor="#e9e9e9"
-            socialMediaManagementTextAlign="center"
-            socialMediaManagementDisplay="inline-block"
-            propMargin1="0"
-            propFontFamily1="inherit"
-            propFontSize1="inherit"
-            propPaddingLeft1="33px"
-            propAlignSelf1="unset"
-            propPosition1="unset"
-            propFontWeight1="unset"
-            propColor1="unset"
-            propTextAlign1="unset"
-            propDisplay1="unset"
-            propAlignSelf2="stretch"
-            propPosition2="relative"
-            propFontSize2="25px"
-            propFontWeight2="600"
-            propFontFamily2="Poppins"
-            propColor2="#e9e9e9"
-            propTextAlign2="center"
-            propDisplay2="inline-block"
+            services={[
+              { name: "Analisi e Strategia SEO", description: "Analisi e Strategia SEO" },
+              { name: "Branding e posizionamento", description: "Branding e posizionamento" },
+              { name: "Storytelling", description: "Storytelling" },
+            ]}
+            imageSrc="/notebook.png"
           />
         </div>
       </div>

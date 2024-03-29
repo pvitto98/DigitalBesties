@@ -1,5 +1,4 @@
 import { FunctionComponent, useCallback } from "react";
-import NavbarNew from "../components/NavBarNew";
 import styles from "./Hero1.module.css";
 import Wave from "react-wavify";
 

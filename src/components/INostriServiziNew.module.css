@@ -16,15 +16,15 @@
   opacity: 0;
 }
 .title {
-  height: 83px;
+  /* height: 83px; */
   font-weight: 800;
 }
 .title.animate {
   animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
 }
 .abbiamoUnServizio {
-  height: 50px;
-  line-height: 50px;
+  /* height: 50px; */
+  /* line-height: 50px; */
 }
 .abbiamoUnServizio.animate {
   animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-7xl);
+  font-size: clamp(15px,4vw,23px);
 }
 .servizicontainer {
   align-items: flex-start;
@@ -52,23 +52,24 @@
   justify-content: flex-start;
 }
 .chisiamo1content {
-  width: 1000px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-11xl);
 }
 .inostriserviziNew {
   background-color: var(--color-gainsboro);
-  max-width: 100%;
+  /* max-width: 100%; */
   overflow: hidden;
   flex-direction: row;
   align-items: center;
   padding: var(--padding-81xl);
   box-sizing: border-box;
   text-align: left;
-  font-size: var(--font-size-36xl);
+  font-size: clamp(40px,4vw,55px);
   color: var(--color-dimgray-300);
   font-family: var(--font-poppins);
+  width: 100vw;
 }
 @media screen and (max-width: 960px) {
   .abbiamoUnServizio,

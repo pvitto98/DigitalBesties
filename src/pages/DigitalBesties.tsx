@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Motto from "../components/Motto";
 import ChiSiamo from "../components/ChiSiamo";
-import INostriServizi from "../components/INostriServizi";
+import INostriServiziNew from "../components/INostriServiziNew";
 import Contatti from "../components/Contatti";
 import styles from "./DigitalBesties.module.css";
 import ChiSiamoNew from "../components/ChiSiamoNew";
 import Hero1 from "./Hero1";
-import NavbarNew from "../components/NavBarNew";
+import NavbarNew from "../components/NavbarNew";
 import Wave from "react-wavify";
 
 const DigitalBesties: FunctionComponent = () => {
@@ -51,7 +51,7 @@ const DigitalBesties: FunctionComponent = () => {
     }}
     style={{position: "relative", top: "0px", zIndex: 1, backgroundColor: "#5c374c", scale: "1.08"}}
   />
-      <INostriServizi />
+      <INostriServiziNew />
       <Wave
     fill="#ce6a85"
     paused={false}
