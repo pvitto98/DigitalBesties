@@ -17,7 +17,7 @@
 }
 .iNostriServizi.animate,
 .servizio.animate {
-  animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+  /* animation: 1s ease 0s 1 normal forwards tilt-in-top-1; */
 }
 .title {
   align-self: stretch;

@@ -1,50 +1,23 @@
 import { FunctionComponent, useEffect } from "react";
 import Servizio from "./Servizio1";
 import styles from "./INostriServiziNew.module.css";
+import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 
 const INostriServiziNew: FunctionComponent = () => {
-  useEffect(() => {
-    const scrollAnimElements = document.querySelectorAll(
-      "[data-animate-on-scroll]"
-    );
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting || entry.intersectionRatio > 0) {
-            const targetElement = entry.target;
-            targetElement.classList.add(styles.animate);
-            observer.unobserve(targetElement);
-          }
-        }
-      },
-      {
-        threshold: 0.15,
-      }
-    );
 
-    for (let i = 0; i < scrollAnimElements.length; i++) {
-      observer.observe(scrollAnimElements[i]);
-    }
-
-    return () => {
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.unobserve(scrollAnimElements[i]);
-      }
-    };
-  }, []);
 
   return (
     <div className={styles.inostriserviziNew} data-scroll-to="iNostriServiziNew">
       <div className={styles.chisiamo1content}>
-        <div className={styles.title} >
+        <div className={styles.title} data-aos="fade-up">
           I Nostri Servizi
         </div>
-        <div className={styles.text}>
-          <div className={styles.abbiamoUnServizio}>
+        <div className={styles.text} >
+          <div className={styles.abbiamoUnServizio} data-aos="fade-up">
             Abbiamo un servizio per ogni tua esigenza:
           </div>
         </div>
-        <div className={styles.servizicontainer}>
+        <div className={styles.servizicontainer} data-aos="fade-up">
           <Servizio
             servizioTitle="Social Media Marketing"
             servizioText="Gestiamo i tuoi account sui social media per aumentare la tua visibilità online e coinvolgere il tuo pubblico target."
