@@ -36,11 +36,11 @@ const INostriServiziNew: FunctionComponent = () => {
   return (
     <div className={styles.inostriserviziNew} data-scroll-to="iNostriServiziNew">
       <div className={styles.chisiamo1content}>
-        <div className={styles.title} data-animate-on-scroll>
+        <div className={styles.title} >
           I Nostri Servizi
         </div>
         <div className={styles.text}>
-          <div className={styles.abbiamoUnServizio} data-animate-on-scroll>
+          <div className={styles.abbiamoUnServizio}>
             Abbiamo un servizio per ogni tua esigenza:
           </div>
         </div>

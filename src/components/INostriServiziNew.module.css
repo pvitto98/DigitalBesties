@@ -94,7 +94,7 @@
   .chisiamo1content {
     align-self: stretch;
     width: auto;
-    padding-top: var(--padding-81xl);
+    /* padding-top: var(--padding-81xl); */
     box-sizing: border-box;
   }
   .inostriserviziNew {
