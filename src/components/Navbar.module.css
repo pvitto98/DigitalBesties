@@ -1,36 +1,79 @@
-.logo {
+.logoframeIcon {
+  /* width: 50px; */
   position: relative;
-  letter-spacing: 0.03em;
-  line-height: 36.9px;
-  text-shadow: 1.2px 0 0#ffe194, 0 1.2px 0#ffe194, -1.2px 0 0#ffe194,
-    0-1.2px 0#ffe194;
+  height: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
 }
-.navbar {
-  margin-top: 20px;
-  align-self: stretch;
-  height: 70px;
-  background-color: var(--color-dimgray-200);
-  /* box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25); */
-  box-shadow: 40px 4px 40px rgba(0, 0, 0, 0.25);
-
-  /* display: flex;
+.hiSiamo {
+  text-transform: lowercase;
+}
+.chisiamo {
+  position: relative;
+  font-weight: 600;
+}
+.links {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: var(--padding-6xl) var(--padding-31xl);
-  box-sizing: border-box;
-  z-index: 2;
-  text-align: center; */
-  font-size: var(--font-size-11xl);
-  color: var(--color-mediumvioletred);
-  font-family: var(--font-lily-script-one);
-  z-index: 3;
+  justify-content: flex-end;
+  gap: var(--gap-6xl);
 }
-@media screen and (max-width: 420px) {
-  .logo {
-    font-size: var(--font-size-11xl);
+.clipPathGroup {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  display: none;
+}
+.navbar,
+.navigation {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navigation {
+  overflow: hidden;
+  justify-content: flex-end;
+  gap: var(--gap-6xl);
+}
+.navbar {
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-31xl);
+  z-index: 2;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-dimgray-100);
+  font-family: var(--font-poppins);
+  background-color: #e3e3e3;
+
+}
+@media screen and (max-width: 960px) {
+  .chisiamo {
+    font-size: var(--font-size-xl);
   }
-  .navbar{
-    height: 50px;
+  .links {
+    display: none;
+  }
+  .clipPathGroup {
+    display: flex;
+  }
+}
+@media screen and (max-width: 450px) {
+  .chisiamo {
+    font-size: var(--font-size-mini);
+  }
+  .links {
+    display: none;
+  }
+  .clipPathGroup {
+    display: flex;
+  }
+  .navbar {
+    padding: var(--padding-mini) 20px;
+  }
+  .logoframeIcon {
+    height: 40px;
   }
 }

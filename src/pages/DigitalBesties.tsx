@@ -14,6 +14,7 @@ import CustomWave from "../components/CustomWave";
 const DigitalBesties: FunctionComponent = () => {
   return (
     <div className={styles.digitalbesties}>
+      <Navbar />
       <Hero1 />
       <CustomWave fill="#ce6a85" backgroundColor="#e3e3e3" />
       <Motto />

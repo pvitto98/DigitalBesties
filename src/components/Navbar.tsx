@@ -1,17 +1,30 @@
 import { FunctionComponent } from "react";
 import styles from "./Navbar.module.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
-import Ticker from "./ExperimentalComponent/Ticker";
 
-AOS.init();
-
-const Navbar: FunctionComponent = () => {
+const NavbarNew: FunctionComponent = () => {
   return (
-    <div className={styles.navbar} data-aos="fade-down" data-aos-delay="300">
-      {/* <div className={styles.logo}>Digital Besties</div> */}
-<Ticker image="/longdigitalbesties.png" repeat={20} />    </div>
+    <div className={styles.navbar}>
+      <img className={styles.logoframeIcon} alt="" src="/longdigitalbesties.png" />
+      {/* <div className={styles.navigation}>
+        <div className={styles.links}>
+          <div className={styles.chisiamo}>
+            <span className={styles.hiSiamo}>Chi Siamo</span>
+          </div>
+          <div className={styles.chisiamo}>
+            I<span className={styles.hiSiamo}> nostri Servizi</span>
+          </div>
+          <div className={styles.chisiamo}>
+            C<span className={styles.hiSiamo}>ontattaci</span>
+          </div>
+        </div>
+        <img
+          className={styles.clipPathGroup}
+          alt=""
+          src="/clip-path-group.svg"
+        />
+      </div> */}
+    </div>
   );
 };
 
-export default Navbar;
+export default NavbarNew;
