@@ -1,0 +1,230 @@
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+.perchNonCi,
+.title {
+  align-self: stretch;
+  position: relative;
+  display: inline-block;
+  /* opacity: 0; */
+}
+.title {
+  font-weight: 800;
+}
+.title.animate {
+  animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+}
+.perchNonCi {
+
+}
+.perchNonCi.animate {
+  animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
+}
+.contattacititle,
+.subtitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(18px,2vw,23px);
+}
+.contattacititle {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.parentDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Optional: Adds space between the two divs */
+}
+.email {
+  font-size: clamp(18px,2vw,28px);
+  line-height: 0%;
+  font-family: var(--font-abril-fatface);
+  display: inline-block;
+  color: inherit; /* Add this to change the color */
+  text-decoration: none; /* Add this to remove the underline */
+}
+.contattaciform,
+.social {
+  /* align-self: stretch; */
+  /* height: 240px; */
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contattaciNew,
+.contattacicontent {
+  display: flex;
+  align-items: flex-start;
+}
+.contattacicontent {
+  width: 100vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.contattaciNew {
+  background-color: var(--color-palevioletred);
+  max-width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-81xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: clamp(40px,4vw,55px);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+textarea {
+  width: 100%;
+  height: 100px; /* Adjust as needed */
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border-color: #007BFF;
+}
+input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+input::placeholder, textarea::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+.resizable {
+  font-size: clamp(12px, 2vw, 20px);
+}
+.btn{
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) 18.924102783203125px;
+  background-color: var(--color-lightsalmon);
+  border-radius: 63.08px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  font-size: var(--font-size-base);
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-black);
+  font-weight: bold;
+  text-align: center;
+}
+.item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: 0;
+  transition: 0.5s ease;
+}
+
+.item:hover a::before {
+  scale: 1 1;
+}
+.icon {
+  font-size: 2rem;
+  color: hsl(203, 92%, 8%);
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.item a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.item:nth-child(1) {
+  --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+}
+
+
+@media screen and (max-width: 960px) {
+  .perchNonCi,
+  .title {
+    text-align: center;
+  }
+  .subtitle {
+    align-self: stretch;
+    width: auto;
+  }
+  .contattaciNew {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-81xl) var(--padding-31xl) var(--padding-6xl);
+    box-sizing: border-box;
+    gap: var(--gap-31xl);
+  }
+  .parentDiv {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .formContainer{
+    align-items: center;
+    width: 100%;
+  }
+  .btn {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+  }
+  form{
+    margin-top: var(--padding-11xl);
+  }
+}
+@media screen and (max-width: 420px) {
+  .contattacicontent {
+    align-self: stretch;
+    width: auto;
+    padding-top: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+  .contattaciNew {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
