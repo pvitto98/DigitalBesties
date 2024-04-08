@@ -1,132 +1,284 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.serviziotitle {
+  top: 0;
+  left: 0;
+  font-weight: 800;
+}
+.serviziotitolo {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  font-size: clamp(20px,4vw, 40px);
+}
+.reduce {
+  width: 29px;
+  display: none;
+}
+.extend,
+.reduce {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: clamp(30px, 4vw, 50px);
+  user-select: none;
+  z-index: 1;
+}
+.serviziopreview,
+.serviziotextcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.serviziopreview {
+  flex: 1;
+  justify-content: space-between;
+}
+.serviziotextcontainer {
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+
+  font-size: var(--font-size-31xl);
+}
+.serviziotext {
+  width: 80%;
+  position: relative;
+  font-weight: 200;
+  display: none;
+  flex-direction: row;
+}
+.digitalStrategy {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-14xl);
+}
+.serviziotext1 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.servizicontainer {
+  /* width: 900px; */
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  color: var(--color-lightsalmon);
+  /* display: grid; */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px; /* Adjust this as needed */
+}
+.servizioExpandedContent {
+  /* Other styles */
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  margin-left: 10px;
+  font-size: clamp(15px,4vw, 23px);
+
+}
+
+.serviziopreview1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Adjust this as needed */
+  justify-content: center;
+  width: 100%;
+}
+
+li{
+  list-style-type: circle;
+}
+.servizio,
+.serviziocontent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.serviziocontent {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  padding: var(--padding-16xl) var(--padding-31xl);
+}
+
 .servizio {
-    height: 580px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--br-mini);
-    background-color: var(--color-dimgray-100);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    padding: var(--padding-mini) var(--padding-xl) var(--padding-11xl);
-    box-sizing: border-box;
-    gap: 20px 0;
-    font-size: var(--font-size-9xl);
-  }
-  
-  .serviziocontent {
-    border-radius: var(--br-8xs);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .heading,
-  .imageIcon {
-    width: 303px;
-    position: relative;
-    height: 38px;
-  }
+  align-items: flex-start;
+  text-align: left;
+  font-size: clamp(15px,4vw, 23px);
+  font-family: var(--font-poppins);
+  background-color: var(--color-whitesmoke);
+  color: var(--color-dimgray-100);
+  height: auto;
 
-  .heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .imageIcon {
-    width: 300px;
-    height: auto;
-    overflow: hidden;
-    flex-shrink: 0;
-    object-fit: cover;
-  }
-  
-  .serviziotitle {
-    position: absolute;
-    top: 0;
-  }
-  
-  .serviziotextcontainer {
-    width: auto;
-    flex: 1;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .bullet{
-    color: var(--color-khaki);
+  transition: max-height 1s ease-in-out;
 
-  }
+}
+.servizio.expanded {
+  background-color: #6C4159;
+  color: var(--color-whitesmoke);
+}
+.expanded {
+  max-height: 1000px; /* Adjust this to a value larger than the expanded height of the card */
+}
 
+.show {
+  display: block;
+}
+
+.servizioContainer {
+  display: flex;
+  align-items: center; /* This will vertically center the image and the text */
+}
+
+.servizioImage {
+  margin-right: 20px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  /* transition: opacity 0.5s ease-in-out, height 0s 0.5s, width 0s 0.5s; */
+  scale: 1.2;
+}
+
+.servizioImage.show {
+  height: 280px;
+  width: 280px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, height 0s, width 0s;
+  overflow: visible;
+  align-self: center;
+}
+
+
+@keyframes rotateAndFade {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(18deg); }
+  20% { transform: rotate(36deg); }
+  30% { transform: rotate(54deg); }
+  40% { transform: rotate(72deg); }
+  50% { transform: rotate(90deg); }
+  60% { transform: rotate(108deg); }
+  70% { transform: rotate(126deg); }
+  80% { transform: rotate(144deg); }
+  90% { transform: rotate(162deg); }
+  100% { transform: rotate(180deg); }
+}
+
+@keyframes reverseRotateAndFade {
+  0% { transform: rotate(180deg); }
+  10% { transform: rotate(162deg); }
+  20% { transform: rotate(144deg); }
+  30% { transform: rotate(126deg); }
+  40% { transform: rotate(108deg); }
+  50% { transform: rotate(90deg); }
+  60% { transform: rotate(72deg); }
+  70% { transform: rotate(54deg); }
+  80% { transform: rotate(36deg); }
+  90% { transform: rotate(18deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.rotate {
+  animation: rotateAndFade 0.5s ease-in-out forwards;
+}
+
+.reverseRotate {
+  animation: reverseRotateAndFade 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.serviziotext, .servizicontainer {
+  opacity: 0;
+  display: none;
+}
+
+.fadeInGrid {
+  animation: fadeIn 1s forwards;
+  /* animation-delay: 1s; */
+  display: grid !important;
+}
+
+.fadeInFlex {
+  animation: fadeIn 1s forwards;
+  /* animation-delay: 1s; */
+  display: flex !important;
+}
+
+
+@media (max-width: 1024px) {
   .serviziotext {
-    align-self: stretch;
-    position: relative;
+    width: 100%;
+  }
+  .servizioExpandedContent {
+    width: 90%;
+  }
+  li{
+    font-size: 20px
+  }
+}
+
+@media (max-width: 768px) {
+  .serviziotext {
+    width: 100%;
+    /* text-align: center; */
+  }
+  .servizioExpandedContent {
+    width: 100%;
+    margin-left: 5px;
+    flex-direction: column;
+  }
+
+  .servizio.expanded .servizioExpandedContent {
+    margin-top: 10px;
+    gap: 15px;
+
+  }
+  .servizicontainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px; /* Adjust this as needed */
+    /* justify-items: center; */
+  }
+  .servizicontainer {
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+  }
+  ul{
+    padding: 0px;
+  }
+
+  .serviziocontent {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: start;
+    padding: var(--padding-16xl) 30px;
   }
   
-  .servizio.animate {
-    animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+  .servizioImage.show {
+    height: 150px;
+    width: 150px;
   }
-
-  .servizioservices{
-    margin-top: 20px;
+  .serviziopreview1 {
+    gap: 15px; /* Adjust this as needed */
   }
-
-
-  @media screen and (max-width: 426px) {
-    .servizio{
-        height: auto;
-        padding-right: 20px;
-        padding-left: 20px;
-        font-size: var(--font-size-3xl);
-        gap: 5px 0;
-
-    }
-    .imageIcon{
-        width: 200px;
-        height: 200px;
-    }
-    .serviziotextcontainer {
-        font-size: var(--font-size-mini);
-
-      }
-      .serviziocontent{
-        gap: 10px 0;
-      }
-  }
-
   
-  @media screen and (max-width: 426px) and  (orientation: landscape) {
-    .servizio {
-      /* Use Flexbox to position the title, image, description, and bullet points */
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: auto;
-      width: 100%;
-    }
-  
-    .serviziocontent {
-      /* Position the title and image to the left */
-      order: 1;
-    }
-  
-    .serviziotextcontainer {
-      /* Position the description and bullet points to the right */
-      order: 2;
-      margin-top:50px;
-    }
 
-    .aos-animate {
-      animation-name: none !important;
-    }
+}
+
+@media (max-width: 420px) {
+  li{
+    font-size: 14px;
+    /* text-align: center; */
+    /* object-position: center; */
+      list-style-type: none;
   }
-
+  .digitalStrategy {
+    padding-left: 0px;
+  }
+}

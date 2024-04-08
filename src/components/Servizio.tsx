@@ -1,32 +1,70 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import styles from "./Servizio.module.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 
-interface ServizioProps {
-  title: string;
-  imageSrc: string;
-  text: string;
-  services: string[]; // Add this line
+export type ServizioType = {
+  servizioTitle?: string;
+  servizioText?: string;
+  services?: { name: string; description: string }[];
+  imageSrc?: string; // Add this line
+};
 
-}
+const Servizio: FunctionComponent<ServizioType> = ({
+  servizioTitle,
+  servizioText,
+  services = [],
+  imageSrc, // Add this line
+}) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
-const Servizio: FunctionComponent<ServizioProps> = ({ title, imageSrc, text, services }) => {
+  const handleExpandClick = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+    // Pre-load the image
+    useEffect(() => {
+      if (imageSrc) {
+        const img = new Image();
+        img.src = imageSrc;
+      }
+    }, [imageSrc]);
+
   return (
-    <div className={styles.servizio} >
+    <div className={`${styles.servizio} ${isExpanded ? styles.expanded : ""}`}>
       <div className={styles.serviziocontent}>
-        <div className={styles.heading}>
-          <div className={styles.serviziotitle}>{title}</div>
+        <div className={styles.serviziotextcontainer}>
+          <div className={styles.serviziopreview}>
+            <div className={styles.serviziotitolo}>
+              <div className={styles.serviziotitle}>{servizioTitle}</div>
+            </div>
+            <div
+              className={`${styles.extend} ${isExpanded ? styles.rotate : styles.reverseRotate}`}
+              onClick={handleExpandClick}
+            >
+              {isExpanded ? "-" : "+"}
+            </div>
+          </div>
         </div>
-        <img className={styles.imageIcon} alt="" src={imageSrc} />
-      </div>
-      <div className={styles.serviziotextcontainer}>
-        <div className={styles.serviziotext}>{text}</div>
-        <div className={styles.servizioservices}>
-          {services.map((service) => (
-            <div className={styles.bullet}>{service}</div>
+        <div className={styles.servizioExpandedContent}>
+        <div className={styles.serviziopreview1}>
+        <div className={`${styles.serviziotext} ${isExpanded ? styles.fadeInFlex : ""}`}>
+          {servizioText}
+          </div>
+        <div className={`${styles.servizicontainer} ${isExpanded ? styles.fadeInGrid : ""}`}>
+          {services.map((service, index) => (
+            <div key={index} className={styles.serviziotext1}>
+              <ul className={styles.digitalStrategy}>
+                <li>{service.description}</li>
+              </ul>
+            </div>
           ))}
         </div>
+        </div>
+        <img
+      src={imageSrc}
+      alt="Servizio image"
+      className={`${styles.servizioImage} ${isExpanded ? styles.show : styles.hide}`}
+    />
+    </div>
       </div>
     </div>
   );

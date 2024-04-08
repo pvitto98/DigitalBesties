@@ -19,7 +19,7 @@ const CustomWave: FunctionComponent<CustomWaveProps> = ({ fill, backgroundColor 
         speed: isMobile ? 0.12 : 0.2,
         points: isMobile ? 3 : 5,
       }}
-      style={{position: "relative", top: "0px", zIndex: 1, backgroundColor: backgroundColor, scale: "1.08"}}
+      style={{ position: "relative", top: "0px", zIndex: 1, backgroundColor: backgroundColor, scale: "1.08" }}
     />
   );
 };

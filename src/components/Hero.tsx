@@ -1,14 +1,10 @@
-import { FunctionComponent, useCallback, useEffect } from "react";
-import ContactFormContainer from "./ContactFormContainer";
+import { FunctionComponent, useCallback } from "react";
 import styles from "./Hero.module.css";
-import DripEffect from "./DripEffect"; // Assuming DripEffect contains the HTML and CSS for the liquid drop effect
-import Ticker from "./ExperimentalComponent/Ticker";
 
 const Hero: FunctionComponent = () => {
-  
   const onServiziButtonClick = useCallback(() => {
     const anchor = document.querySelector(
-      "[data-scroll-to='iNostriServiziContainer']"
+      "[data-scroll-to='iNostriServiziNew']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -24,57 +20,37 @@ const Hero: FunctionComponent = () => {
     }
   }, []);
 
-  
-  // useEffect(() => {
-  //   const mq = window.matchMedia("(orientation: landscape) and (max-width: 426px)");
-  //     if (mq.matches) {
-  //     const buttons = document.querySelector("." + styles.herobuttons) as HTMLElement;
-  //     if (buttons) {
-  //       buttons.removeAttribute("data-aos");
-  //       buttons.removeAttribute("data-aos-delay");
-  //     }
-  //   }
-  // }, []);
-
-
   return (
-    <div className={styles.hero}>
-            {/* <Ticker /> */}
-
+    <div className={styles.hero2}>
       <div className={styles.herocontent}>
         <div className={styles.herotext}>
-          <div className={styles.title} >
-            <p className={styles.sulWebNon}>Sul web non ti </p>
+          <div className={styles.title}>
+            <p className={styles.sulWebNon}>{`Sul web non ti `}</p>
             <p className={styles.sulWebNon}>si fila nessuno?</p>
           </div>
-          <div className={styles.subtitle} >Forse perché non ci conosci ancora...</div>
-        </div>
-        <div className={styles.herobuttons} data-aos="fade-up" data-aos-delay="400">
-          <button
-            className={styles.servizibutton}
-            onClick={onServiziButtonClick}
-          >
-            <div className={styles.button}>
-              <div className={styles.iNostriServizi}>I Nostri Servizi</div>
-            </div>
-          </button>      
-          
-          
-          <button
-            className={styles.contattacibutton}
-            onClick={onContattaciButtonClick}
-          >
-            <div className={styles.button}>
-              <div className={styles.contattaci}>Contattaci</div>
-            </div>
-          </button>
+          <b className={styles.subtitle}>
+            Forse perché non ci conosci ancora...
+          </b>
+          <div className={styles.herobuttons}>
+            <button
+              className={styles.servizibutton}
+              onClick={onServiziButtonClick}
+            >
+              <div className={styles.button}>
+                <div className={styles.iNostriServizi}>I Nostri Servizi</div>
+              </div>
+            </button>
+            <button
+              className={styles.contattacibutton}
+              onClick={onContattaciButtonClick}
+            >
+              <div className={styles.button}>
+                <div className={styles.contattaci}>Contattaci</div>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
-      {/* <div id="liquid-container" className={styles.liquidContainer}>
-      </div> */}
-
-
-
     </div>
   );
 };

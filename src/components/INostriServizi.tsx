@@ -1,50 +1,54 @@
 import { FunctionComponent, useEffect } from "react";
-import styles from "./INostriServizi.module.css";
 import Servizio from "./Servizio";
-import AOS from 'aos';
+import styles from "./INostriServizi.module.css";
 import 'aos/dist/aos.css'; // You can also load AOS styles from a CDN
 
 const INostriServizi: FunctionComponent = () => {
+
+
   return (
-    <div
-      className={styles.inostriservizi}
-      data-scroll-to="iNostriServiziContainer"
-    >
-      <div className={styles.title}>
-        <div className={styles.iNostriServizi} data-aos="fade-up">
-          I nostri servizi
+    <div className={styles.inostriserviziNew} data-scroll-to="iNostriServiziNew">
+      <div className={styles.chisiamo1content}>
+        <div className={styles.title} data-aos="fade-up">
+          I Nostri Servizi
         </div>
-      </div>
-      <div className={styles.inostriservizicontent}>
-        <Servizio
-          title="Social Media Marketing"
-          imageSrc="/smartphone.png"
-          text="Studiamo e curiamo le tue piattaforme social per dare ai tuoi progetti la visibilità e il valore che meritano"
-          services={[
-            "Digital Strategy",
-            "Content Marketing e Advertising",
-            "Social Media Management"
-          ]}
-        />
-        <Servizio
-          title="Web Developing"
-          imageSrc="/desktop.png"
-          text="Sviluppiamo siti web in grado di incorniciare la tua idea in una User Experience avvincente e confortevole per qualsiasi dispositivo"
-          services={[
-            "Sviluppo siti web ed E-commerce",
-            "Sviluppo app mobile native e multipiattaforma"
-          ]}
-        />
-        <Servizio
-          title="Copywriting"
-          imageSrc="/notebook.png"
-          text="Tessiamo le trame della tua presenza online promuovendo la tua attività con storytelling coinvolgenti e ottimizzati in chiave SEO"
-          services={[
-            "Analisi e Strategia SEO",
-            "Branding e posizionamento",
-            "Storytelling"
-          ]}
-        />
+        <div className={styles.text} >
+          <div className={styles.abbiamoUnServizio} data-aos="fade-up">
+            Abbiamo un servizio per ogni tua esigenza:
+          </div>
+        </div>
+        <div className={styles.servizicontainer} data-aos="fade-up">
+          <Servizio
+            servizioTitle="Social Media Marketing"
+            servizioText="Gestiamo i tuoi account sui social media per aumentare la tua visibilità online e coinvolgere il tuo pubblico target."
+            services={[
+              { name: "Digital Strategy", description: "Digital Strategy" },
+              { name: "Content Marketing e Advertising", description: "Content Marketing e Advertising" },
+              { name: "Social Media Management", description: "Social Media Management" },
+            ]}
+            imageSrc="/smartphone.png"
+          />
+          <Servizio
+            servizioTitle="Web Development"
+            servizioText="Creiamo siti web che si adattano a tutti i dispositivi e offrono un'esperienza utente fluida e piacevole."
+            services={[
+              { name: "Sviluppo Siti Web", description: "Sviluppo Siti Web" },
+              { name: "Sviluppo E commerce", description: "Sviluppo E commerce" },
+              { name: "Sviluppo App Mobile", description: "Sviluppo App Mobile" },
+            ]}
+            imageSrc="/desktop.png"
+          />
+          <Servizio
+            servizioTitle="Copywriting"
+            servizioText="Scriviamo testi persuasivi e coinvolgenti per promuovere la tua azienda o prodotto."
+            services={[
+              { name: "Analisi e Strategia SEO", description: "Analisi e Strategia SEO" },
+              { name: "Branding e posizionamento", description: "Branding e posizionamento" },
+              { name: "Storytelling", description: "Storytelling" },
+            ]}
+            imageSrc="/notebook.png"
+          />
+        </div>
       </div>
     </div>
   );

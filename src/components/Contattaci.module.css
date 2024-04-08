@@ -21,9 +21,6 @@
 .title.animate {
   animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
 }
-.perchNonCi {
-
-}
 .perchNonCi.animate {
   animation: 1s ease 0.5s 1 normal forwards tilt-in-top-1;
 }
@@ -56,11 +53,6 @@
   color: inherit; /* Add this to change the color */
   text-decoration: none; /* Add this to remove the underline */
 }
-.contattaciform,
-.social {
-  /* align-self: stretch; */
-  /* height: 240px; */
-}
 .social {
   display: flex;
   flex-direction: column;
@@ -83,12 +75,13 @@
   overflow: hidden;
   flex-direction: row;
   justify-content: center;
-  padding: var(--padding-81xl);
+  padding: var(--padding-81xl) var(--padding-81xl) 50px var(--padding-81xl);
   box-sizing: border-box;
   text-align: left;
   font-size: clamp(40px,4vw,55px);
   color: var(--color-white);
   font-family: var(--font-poppins);
+  z-index: 1;
 }
 textarea {
   width: 100%;
@@ -98,12 +91,17 @@ textarea {
   padding: 10px;
   background-color: #f8f8f8;
   font-size: 16px;
+  resize: none;
+
 }
 .form_group {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
+}
+.contattaciform{
+  width: 45%;
 }
 .formContainer{
   display: flex;
@@ -174,7 +172,11 @@ input::placeholder, textarea::placeholder {
 }
 
 
+
 @media screen and (max-width: 960px) {
+  .contattaciform{
+    width: 100%;
+  }
   .perchNonCi,
   .title {
     text-align: center;
@@ -226,5 +228,6 @@ input::placeholder, textarea::placeholder {
     padding-left: var(--padding-11xl);
     padding-right: var(--padding-11xl);
     box-sizing: border-box;
+    width: 100%;
   }
 }
