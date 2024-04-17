@@ -1,0 +1,86 @@
+.imageIcon {
+  width: 291px;
+  position: relative;
+  height: 283px;
+  object-fit: cover;
+}
+.copywriting {
+  width: 179px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.contenttext,
+.tiScrivoLe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tiScrivoLe {
+  width: 179px;
+  position: relative;
+  font-size: var(--font-size-mini);
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+}
+.contenttext {
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  background-color: var(--color-aliceblue);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-mini) var(--padding-31xl);
+  gap: var(--gap-3xs);
+}
+.backIcon,
+.buttonIcon {
+  width: 40px;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.buttonIcon {
+  width: 50px;
+  height: 50px;
+}
+.content,
+.contentcontrol {
+  justify-content: flex-start;
+}
+.contentcontrol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-2xl);
+}
+.content {
+  width: 320px;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.content,
+.musicplayer,
+.playercontent {
+  display: flex;
+  align-items: center;
+}
+.playercontent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-181xl);
+}
+.musicplayer {
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-31xl);
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-black);
+  font-family: var(--font-pixdortwo);
+}
