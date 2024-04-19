@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Keania+One:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PixdorTwo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cyber+Angel:wght@400&display=swap");
 body {
   margin: 0;
   line-height: normal;
@@ -20,6 +21,7 @@ body {
   --font-nunito: Nunito;
   --font-pixdortwo: PixdorTwo;
   --font-keania-one: "Keania One";
+  --font-cyber-angel: "Cyber Angel";
 
   /* font sizes */
   --font-size-16xl: 35px;
@@ -69,7 +71,6 @@ body {
   --gap-51xl: 70px;
   --gap-131xl: 150px;
   --gap-81xl: 100px;
-  --gap-sm: 14px;
   --gap-2xl: 21px;
 
   /* Paddings */
